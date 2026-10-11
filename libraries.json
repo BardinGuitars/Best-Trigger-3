@@ -1,3 +1,20 @@
 {
-  "libraries": []
+  "libraries": [
+    {
+      "name": "Artem Music - Leonid Nikonov Drums Samples Pack",
+      "description": "A Ludwig kit recorded at the DTH studios, Moscow (2021): kick, snare and three toms, each in several microphone versions (36 multisample instruments). Free; shared by Artem Music with the author's permission.",
+      "version": "1.0",
+      "size": 42919540,
+      "sha256": "f38081a2d3f54949166579599e9b5785160aca0e6ea903ccce0fd4f0d0c7ab7c",
+      "url": "https://github.com/BardinGuitars/Best-Trigger-3/releases/download/libraries/Artem-Music-Leonid-Nikonov-Drums-Samples-Pack.zip",
+      "contents": [
+        "Kick - Ludwig Keystone 24x14 (9 mic versions)",
+        "Snare - Ludwig Supraphonic LM 402 14x6,5 (9 mic versions)",
+        "Tom 1 - Ludwig Keystone 13x9 (6)",
+        "Tom 2 - Ludwig Keystone 16x16 (6)",
+        "Tom 3 - Ludwig Keystone 18x16 (6)",
+        "Mics: Kick In / Out / Sub, Snare Top 1 / Top 2 / Bottom, Butt, Overhead, Kit, Room 1 / Room 2, Processed"
+      ]
+    }
+  ]
 }
