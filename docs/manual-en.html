@@ -40,7 +40,7 @@
 <header class="top">
   <h1>BEST TRIGGER 3</h1>
   <div class="sub">User Manual</div>
-  <div class="ver">Version 0.2.1 · VST3 · Windows 10/11 (64-bit) · macOS · <a href="manual-ru.html">Русская версия</a></div>
+  <div class="ver">Version 0.2.2 · VST3 · Windows 10/11 (64-bit) · macOS · <a href="manual-ru.html">Русская версия</a></div>
 </header>
 <main>
 
@@ -132,7 +132,7 @@
 <table>
   <tr><th style="width:190px">Area</th><th>Purpose</th></tr>
   <tr><td><b>Top panel</b></td><td>Logo, name and version. <b>A / B / Copy</b>: compare two settings (B becomes a copy of the current one the first time you press it; <b>Copy</b> copies A→B or B→A). <b>Undo / Redo</b>: the last 5 changes (parameters and sample changes). <b>Presets</b> with "&lt;" "&gt;" arrows: your presets (below). Two thin bars, <b>IN</b> (input) and <b>OUT</b> (output). The knob without a caption is the <b>master output level</b> (−24…+12 dB). The gear is the settings menu; a red dot next to it means a new version is out.</td></tr>
-  <tr><td><b>Scope</b></td><td>Two modes: <b>Hit</b> (the last hit: original, samples, sum) and <b>Timeline</b> (a stream of hits in time). On the right is the <b>TEST strip</b>: the left mouse button fires a test hit, harder the higher you click (sections 7 and 12).</td></tr>
+  <tr><td><b>Scope</b></td><td>Two modes, switched by the button on the right panel, which carries the name of the view that is on: <b>Timeline</b> (a stream of hits in time; the starting view) and <b>Phase</b> (the last hit: original, samples, sum). On the right is the <b>TEST strip</b>: the left mouse button fires a test hit, harder the higher you click (sections 7 and 12).</td></tr>
   <tr><td><b>Left panel "Sum"</b></td><td>The round tick shows the sum on the scope. Knobs <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>. The <b>Low Cut / High Cut</b> button opens the detector's filters.</td></tr>
   <tr><td><b>Channels</b></td><td><b>Original</b> and samples <b>Smp 1–6</b>. Each has: a round tick to show its trace, a level fader, buttons <b>M</b>, <b>S</b>, and for samples <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, knobs <b>Pan</b> and <b>Tune</b>, and a plate with the sample name. A channel without a sample is dimmed.</td></tr>
   <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b> (with the green clip handle), <b>Timeline</b>, <b>Hold</b>, <b>Browser</b> (full version only), <b>Fit</b> (Timeline only).</td></tr>
@@ -170,7 +170,7 @@
 </ul>
 <h2>Timeline mode</h2>
 <ol class="steps">
-  <li>Switch on <b>Timeline</b> and start playback.</li>
+  <li>Make sure the button on the right panel says <b>Timeline</b> (lit; it is the starting view) and start playback.</li>
   <li>The mouse wheel changes the window from 0.1 to 10 seconds; <b>Hold</b> freezes the picture (the wheel still zooms, the middle button scrolls).</li>
   <li>Drag the red lines so that real hits cross them and unwanted sounds stay inside.</li>
   <li>Grey/red "crosses" are sounds the plugin skipped because of Retrigger. If real hits are marked, lower Retrigger or Sensitivity. If one hit has several orange lines, raise them.</li>
@@ -241,7 +241,7 @@
 <p>The <b>Browser</b> button in the right panel opens a separate window: a tree of the library's folders and files, a search box (all typed words must appear in the name and path), the <b>Audition</b> button (play on click), and the buttons <b>Refresh</b>, <b>Migration…</b>, <b>Library folder…</b>, <b>Open in Explorer</b>. At the bottom are six <b>pads</b>, one per sample channel.</p>
 <ul>
   <li><b>One click</b> on a file plays it (if Audition is on).</li>
-  <li><b>A double-click</b>, or dragging onto a pad, loads the file into the channel. Click a pad to select it.</li>
+  <li><b>A double-click</b> loads the file into the next free channel (when all six are taken, into the selected one); dragging onto a pad loads it into that pad. Click a pad to select it.</li>
   <li><b>Right-click a file or folder</b>: choose a pad and load (a folder loads as a multisample); <b>right-click a pad</b> to clear the channel.</li>
 </ul>
 <h2>Online libraries</h2>
@@ -259,7 +259,7 @@
 <h1 id="phase">10. Phase and alignment</h1>
 <p>When a sample plays together with the original, their waves add up. If the peaks coincide the sum is fuller; if one goes "up" while the other goes "down" they cancel each other and the sound gets thin (especially in the lows). Aligning the phase means shifting the sample in time and, if needed, flipping its polarity.</p>
 <h2>Hit mode</h2>
-<p>With Timeline off, the scope shows the <b>last hit</b> (from 40 ms before the hit to 85 ms after). The blue trace is the original, the coloured ones are samples, the white one is the <b>sum</b> (the <b>Sum</b> tick): what really goes to the output, with levels, Mute/Solo, Offset, Ø and envelopes. The traces are drawn with thickened lines, and the height fits the largest trace by itself.</p>
+<p>With the button on <b>Phase</b>, the scope shows the <b>last hit</b> (from 40 ms before the hit to 85 ms after). The blue trace is the original, the coloured ones are samples, the white one is the <b>sum</b> (the <b>Sum</b> tick): what really goes to the output, with levels, Mute/Solo, Offset, Ø and envelopes. The traces are drawn with thickened lines, and the height fits the largest trace by itself.</p>
 <h3>Offset: shifting a sample against the original</h3>
 <p>Each sample has its own <b>Offset</b> from −30 to +30 ms (the original is the reference). The <b>Smp 1…6</b> boxes at the top of the scope show the values.</p>
 <ol class="steps">
@@ -401,7 +401,7 @@
 <footer>
   <b>© 2026 SSM. All rights reserved.</b><br>
   <b>VST is a trademark and software of Steinberg Media Technologies GmbH.</b><br>
-  Best Trigger 3 · version 0.2.1
+  Best Trigger 3 · version 0.2.2
 </footer>
 </main>
 </body>
