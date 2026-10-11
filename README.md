@@ -5,7 +5,7 @@ phase by eye on the scope, or let the Auto tools do it. · **Плагин-три
 
 ![Best Trigger 3](images/best-trigger-3.png)
 
-[English](#english) · [Русский](#русский)
+[English](#english) · [Русский](#русский) · **Manual / Руководство:** [English](https://bardinguitars.github.io/Best-Trigger-3/manual-en.html) · [Русский](https://bardinguitars.github.io/Best-Trigger-3/manual-ru.html)
 
 > **Best Trigger 3 is proprietary software. © 2026 SSM. All rights reserved.** This repository only carries the installers
 > (see [Releases](../../releases)) and the information about them. The program is not open source and may not be copied,
