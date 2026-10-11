@@ -34,8 +34,8 @@ Both can be installed side by side: they have different names in your DAW.
 4. On the first start enter the key (the free version: `thankyou`). An internet connection is needed once, for the activation.
 
 ### Install on macOS
-1. Download  or  from **[Releases](../../releases/latest)** (works on Apple chips and Intel).
-2. The installer is **not notarised by Apple** (Apple's developer programme cannot be paid for from Russia), so macOS warns you the first time: right-click the  → **Open** → **Open**. If your DAW does not show the plugin, see **[macOS: allowing the plugin](docs/INSTALL-macOS.md)**.
+1. Download `BestTrigger3-Free-…-macOS.pkg` or `BestTrigger3-…-macOS.pkg` from **[Releases](../../releases/latest)** (works on Apple chips and Intel).
+2. The installer is **not notarised by Apple** (Apple's developer programme cannot be paid for from Russia), so macOS warns you the first time: right-click the `.pkg` → **Open** → **Open**. If your DAW does not show the plugin, see **[macOS: allowing the plugin](docs/INSTALL-macOS.md)**.
 
 ### Updates
 The plugin checks this page once at every start. When a new release appears, a small red dot shows next to the gear icon.
@@ -66,8 +66,8 @@ Windows 10/11 64-bit, or macOS 10.15 or newer (Apple chips and Intel); a DAW tha
 4. При первом запуске введите ключ (бесплатная версия: `thankyou`). Для активации один раз нужен интернет.
 
 ### Установка на macOS
-1. Скачайте  или  на странице **[Releases](../../releases/latest)** (работает на чипах Apple и на Intel).
-2. Установщик **не нотаризован Apple** (платную программу разработчика Apple из России оплатить нельзя), поэтому при первом запуске macOS предупредит вас: нажмите на  правой кнопкой → **Открыть** → **Открыть**. Если DAW не видит плагин, смотрите **[macOS: как разрешить плагин](docs/INSTALL-macOS.md)**.
+1. Скачайте `BestTrigger3-Free-…-macOS.pkg` или `BestTrigger3-…-macOS.pkg` на странице **[Releases](../../releases/latest)** (работает на чипах Apple и на Intel).
+2. Установщик **не нотаризован Apple** (платную программу разработчика Apple из России оплатить нельзя), поэтому при первом запуске macOS предупредит вас: нажмите на `.pkg` правой кнопкой → **Открыть** → **Открыть**. Если DAW не видит плагин, смотрите **[macOS: как разрешить плагин](docs/INSTALL-macOS.md)**.
 
 ### Обновления
 Плагин проверяет эту страницу при каждом запуске. Когда выходит новая версия, рядом с шестерёнкой загорается небольшая красная точка.
