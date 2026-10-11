@@ -131,14 +131,25 @@
 <figure><img src="images/best-trigger-3.png" alt="The Best Trigger 3 window"><figcaption>The plugin window</figcaption></figure>
 <table>
   <tr><th style="width:190px">Area</th><th>Purpose</th></tr>
-  <tr><td><b>Top panel</b></td><td>Logo, name and version. <b>A / B / Copy</b>: compare two settings (B becomes a copy of the current one the first time you press it; <b>Copy</b> copies A→B or B→A). <b>Undo / Redo</b>: the last 5 changes (parameters and sample changes). Two thin bars, <b>IN</b> (input) and <b>OUT</b> (output). The knob without a caption is the <b>master output level</b> (−24…+12 dB). The gear is the settings menu; a red dot next to it means a new version is out.</td></tr>
+  <tr><td><b>Top panel</b></td><td>Logo, name and version. <b>A / B / Copy</b>: compare two settings (B becomes a copy of the current one the first time you press it; <b>Copy</b> copies A→B or B→A). <b>Undo / Redo</b>: the last 5 changes (parameters and sample changes). <b>Presets</b> with "&lt;" "&gt;" arrows: your presets (below). Two thin bars, <b>IN</b> (input) and <b>OUT</b> (output). The knob without a caption is the <b>master output level</b> (−24…+12 dB). The gear is the settings menu; a red dot next to it means a new version is out.</td></tr>
   <tr><td><b>Scope</b></td><td>Two modes: <b>Hit</b> (the last hit: original, samples, sum) and <b>Timeline</b> (a stream of hits in time). On the right is the <b>TEST strip</b>: the left mouse button fires a test hit, harder the higher you click (sections 7 and 12).</td></tr>
   <tr><td><b>Left panel "Sum"</b></td><td>The round tick shows the sum on the scope. Knobs <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>. The <b>Low Cut / High Cut</b> button opens the detector's filters.</td></tr>
   <tr><td><b>Channels</b></td><td><b>Original</b> and samples <b>Smp 1–6</b>. Each has: a round tick to show its trace, a level fader, buttons <b>M</b>, <b>S</b>, and for samples <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, knobs <b>Pan</b> and <b>Tune</b>, and a plate with the sample name. A channel without a sample is dimmed.</td></tr>
-  <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b> (with the green clip handle), <b>Timeline</b>, <b>Browser</b> (full version only), <b>Hold</b>, <b>Fit</b> (Timeline only).</td></tr>
+  <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b> (with the green clip handle), <b>Timeline</b>, <b>Hold</b>, <b>Browser</b> (full version only), <b>Fit</b> (Timeline only).</td></tr>
   <tr><td><b>Status line</b></td><td>Messages from the plugin, <b>Undo/Cancel</b> for Auto, and the licence status on the right.</td></tr>
 </table>
 <p><b>Fine adjustment:</b> every knob and fader moves ten times finer while you hold <kbd>Shift</kbd>. A double-click restores the default value. A right-click on a knob lets you type a number. Hold the cursor still over a control to see a hint.</p>
+
+<h2>Presets</h2>
+<p>A preset is all your settings (every parameter and the loaded samples) in one file. The <b>Presets</b> button in the top panel (it shows the name of the current preset) opens a menu:</p>
+<ul>
+  <li>the list of your presets: choosing one loads it (the "&lt;" and "&gt;" arrows next to it step through them);</li>
+  <li><b>Save</b>: save the changes into the loaded preset; <b>Save as…</b> / <b>Save as a new preset…</b>: save under a new name (if the name is taken the plugin asks whether to replace it);</li>
+  <li><b>Delete</b>: delete the preset (your current settings do not change);</li>
+  <li><b>Initialize: default settings</b>: return every parameter to the factory value (the samples stay);</li>
+  <li><b>Open the presets folder</b>: shows the preset files (<code>%APPDATA%\DrumTrigger\Presets</code>; you can copy and share them).</li>
+</ul>
+<p>Loading a preset, like any other change, can be taken back with <b>Undo</b>. Samples from your library folder are saved relative to it, so a preset still works after the library is moved. In the free version a preset keeps the parameters; the samples stay the built-in ones.</p>
 
 <h1 id="detect">6. How hits are detected</h1>
 <p>The plugin watches the loudness of the track. When the signal rises above the <b>Threshold</b>, it registers a hit, measures its strength and plays the samples. After that the detector "closes" and is ready for the next hit only after the <b>Retrigger</b> time has passed and the signal has dropped low enough (<b>Sensitivity</b>).</p>
@@ -233,6 +244,8 @@
   <li><b>A double-click</b>, or dragging onto a pad, loads the file into the channel. Click a pad to select it.</li>
   <li><b>Right-click a file or folder</b>: choose a pad and load (a folder loads as a multisample); <b>right-click a pad</b> to clear the channel.</li>
 </ul>
+<h2>Online libraries</h2>
+<p>The <b>Online libraries…</b> button in the browser opens a list of sample libraries that can be downloaded: for each one you see the size, a description and <b>what is inside</b>. Choose a library and press <b>Download and install</b>: the plugin downloads the archive, checks its checksum and unpacks it into your library folder (the folder structure is kept, your own files are never overwritten). The library then shows in the browser tree. Only sounds, .bt3 files and notes are taken from the archive.</p>
 <h2>Migrating a .tci library</h2>
 <p>Gear → <b>Sample library</b> → <b>Migration</b> (or the <b>Migration…</b> button in the browser) turns a library of Trigger Instrument Editor instruments (<code>.tci</code>) into <code>.bt3</code> files:</p>
 <ol class="steps">
