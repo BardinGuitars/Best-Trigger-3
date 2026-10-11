@@ -7,7 +7,7 @@ phase by eye on the scope, or let the Auto tools do it. · **Плагин-три
 
 [English](#english) · [Русский](#русский) · **Manual / Руководство:** [English](https://bardinguitars.github.io/Best-Trigger-3/manual-en.html) · [Русский](https://bardinguitars.github.io/Best-Trigger-3/manual-ru.html)
 
-> **Best Trigger 3 is proprietary software. © 2026 SSM. All rights reserved.** This repository only carries the installers
+> **Best Trigger 3 is proprietary software. © 2026 SSM-Audio. All rights reserved.** This repository only carries the installers
 > (see [Releases](../../releases)) and the information about them. The program is not open source and may not be copied,
 > changed or redistributed without permission.
 
@@ -77,5 +77,5 @@ Windows 10/11 (64 бита) или macOS 10.15 и новее (чипы Apple и 
 
 ---
 
-© 2026 SSM. All rights reserved. VST is a trademark of Steinberg Media Technologies GmbH. Third-party software: see
+© 2026 SSM-Audio. All rights reserved. VST is a trademark of Steinberg Media Technologies GmbH. Third-party software: see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
