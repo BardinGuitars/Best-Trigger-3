@@ -40,7 +40,7 @@
 <header class="top">
   <h1>BEST TRIGGER 3</h1>
   <div class="sub">Руководство пользователя</div>
-  <div class="ver">Версия 0.2.4 · VST3 · Windows 10/11 · macOS · <a href="manual-en.html">English version</a></div>
+  <div class="ver">Версия 0.2.5 · VST3 · Windows 10/11 · macOS · <a href="manual-en.html">English version</a></div>
 </header>
 <main>
 
@@ -114,7 +114,7 @@
   <tr><th style="width:170px">Область</th><th>Назначение</th></tr>
   <tr><td><b>Верхняя панель</b></td><td><b>A / B / Copy</b>, <b>Undo / Redo</b> (5 шагов), <b>Presets</b>, индикаторы IN/OUT, общая ручка выхода, меню-шестерёнка (красная точка — вышла новая версия).</td></tr>
   <tr><td><b>Осциллограф</b></td><td>Два вида, переключаются кнопкой справа: <b>Timeline</b> (удары во времени; вид при запуске) и <b>Phase</b> (последний удар). Зелёная полоса <b>TEST</b> справа — тестовый удар: выше щелчок — сильнее удар.</td></tr>
-  <tr><td><b>Панель Sum</b></td><td>Круглая галочка показывает сумму на осциллографе. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>; фильтры детектора <b>Low Cut / High Cut</b>.</td></tr>
+  <tr><td><b>Панель Sum</b></td><td>Круглая галочка показывает сумму показанных графиков. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>; фильтры детектора <b>Low Cut / High Cut</b>.</td></tr>
   <tr><td><b>Каналы</b></td><td><b>Original</b> и <b>Smp 1–6</b>: галочка графика, фейдер, <b>M</b>, <b>S</b>, <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, <b>Pan</b>, <b>Tune</b> и плашка с именем сэмпла.</td></tr>
   <tr><td><b>Правая панель</b></td><td><b>Auto</b>, <b>REC MIDI</b>, <b>Fit</b> (Timeline), <b>Timeline / Phase</b>, <b>Hold</b>, <b>Browser</b> (полная версия).</td></tr>
 </table>
@@ -155,7 +155,7 @@
   <tr><td><b>ENV</b></td><td>Attack, Sustain и Release сэмпла.</td></tr>
   <tr><td><b>FLT</b></td><td>Low Cut и High Cut для этого сэмпла.</td></tr>
   <tr><td><b>Pan, Tune</b></td><td>Панорама L100…R100; высота ±24 полутона.</td></tr>
-  <tr><td><b>Release</b></td><td>Новый удар за это время приглушает предыдущий сэмпл того же канала.</td></tr>
+  <tr><td><b>Release</b></td><td><b>Auto</b> (по умолчанию): новый удар сам приглушает предыдущий сэмпл того же канала, на быстрых партиях быстрее. <b>off</b> оставляет хвосты; можно задать время.</td></tr>
   <tr><td><b>Orig Gate</b></td><td>После удара оригинал слышен это время, затем закрывается. 0 — выключено.</td></tr>
   <tr><td><b>Humanize</b></td><td>Небольшие случайные изменения уровня, высоты и времени на каждом ударе.</td></tr>
 </table>
@@ -248,7 +248,7 @@
 <p>Плагин использует фреймворк JUCE, TweetNaCl и метод из проекта tci2wav (MIT). Тексты лицензий: <a href="https://github.com/BardinGuitars/Best-Trigger-3/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>. VST — торговая марка Steinberg Media Technologies GmbH.</p>
 <footer>
   <b>© 2026 SSM-Audio. Все права защищены.</b><br>
-  Best Trigger 3 · версия 0.2.4
+  Best Trigger 3 · версия 0.2.5
 </footer>
 </main>
 </body>

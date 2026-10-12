@@ -40,7 +40,7 @@
 <header class="top">
   <h1>BEST TRIGGER 3</h1>
   <div class="sub">User Manual</div>
-  <div class="ver">Version 0.2.4 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
+  <div class="ver">Version 0.2.5 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
 </header>
 <main>
 
@@ -114,7 +114,7 @@
   <tr><th style="width:170px">Area</th><th>Purpose</th></tr>
   <tr><td><b>Top panel</b></td><td><b>A / B / Copy</b>, <b>Undo / Redo</b> (5 steps), <b>Presets</b>, IN/OUT meters, master output knob, gear menu (a red dot means a new version).</td></tr>
   <tr><td><b>Scope</b></td><td>Two views, switched by the button on the right: <b>Timeline</b> (hits in time; the starting view) and <b>Phase</b> (the last hit). The green <b>TEST</b> strip on the right fires a test hit: higher click = harder hit.</td></tr>
-  <tr><td><b>Sum panel</b></td><td>The round tick shows the sum on the scope. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>; <b>Low Cut / High Cut</b> filters for the detector.</td></tr>
+  <tr><td><b>Sum panel</b></td><td>The round tick shows the sum of the traces that are shown. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>; <b>Low Cut / High Cut</b> filters for the detector.</td></tr>
   <tr><td><b>Channels</b></td><td><b>Original</b> and <b>Smp 1–6</b>: trace tick, fader, <b>M</b>, <b>S</b>, <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, <b>Pan</b>, <b>Tune</b>, and a plate with the sample name.</td></tr>
   <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b>, <b>Fit</b> (Timeline), <b>Timeline / Phase</b>, <b>Hold</b>, <b>Browser</b> (full version).</td></tr>
 </table>
@@ -155,7 +155,7 @@
   <tr><td><b>ENV</b></td><td>Attack, Sustain and Release of the sample.</td></tr>
   <tr><td><b>FLT</b></td><td>Low Cut and High Cut for this sample.</td></tr>
   <tr><td><b>Pan, Tune</b></td><td>Pan L100…R100; pitch ±24 semitones.</td></tr>
-  <tr><td><b>Release</b></td><td>A new hit fades out the previous sample of the same channel in this time.</td></tr>
+  <tr><td><b>Release</b></td><td><b>Auto</b> (default): a new hit fades out the previous sample of the same channel by itself, faster on fast parts. <b>off</b> keeps the tails; or set a time.</td></tr>
   <tr><td><b>Orig Gate</b></td><td>After a hit the original stays audible for this time, then closes. 0 = off.</td></tr>
   <tr><td><b>Humanize</b></td><td>Small random changes of level, pitch and timing on every hit.</td></tr>
 </table>
@@ -248,7 +248,7 @@
 <p>The plugin uses the JUCE framework, TweetNaCl and a method from the tci2wav project (MIT). Licence texts: <a href="https://github.com/BardinGuitars/Best-Trigger-3/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>. VST is a trademark of Steinberg Media Technologies GmbH.</p>
 <footer>
   <b>© 2026 SSM-Audio. All rights reserved.</b><br>
-  Best Trigger 3 · version 0.2.4
+  Best Trigger 3 · version 0.2.5
 </footer>
 </main>
 </body>
