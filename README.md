@@ -6,6 +6,8 @@
 
 **Manual · Руководство:** [English](https://bardinguitars.github.io/Best-Trigger-3/manual-en.html) · [Русский](https://bardinguitars.github.io/Best-Trigger-3/manual-ru.html)
 
+**Changelog · История изменений:** [CHANGELOG.md](CHANGELOG.md)
+
 > Proprietary software. © 2026 SSM-Audio. All rights reserved. This page only carries the installers (see [Releases](../../releases)).
 
 ## English
