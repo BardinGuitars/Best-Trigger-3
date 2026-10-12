@@ -1,5 +1,12 @@
 # Changelog · История изменений
 
+## 0.2.11
+- **Separate outputs** (full version): Original and Smp 1 … Smp 6 on their own stereo outputs; the **OUT** button on a channel sends it there. In REAPER: right-click the plugin → *Build multichannel routing*. · **Отдельные выходы** (полная версия): Original и Smp 1 … Smp 6 на своих стерео-выходах; кнопка **OUT** на канале отправляет его туда. В REAPER: правый щелчок по плагину → *Build multichannel routing*.
+- **For best sound** balances only the close microphones. · **For best sound** выравнивает только близкие микрофоны.
+- The interface size is remembered; new sizes **75%** and **110%**. · Размер интерфейса запоминается; новые размеры **75%** и **110%**.
+- **Hold** and **Phase** moved onto the scope; **Reset phase** and **Clear samples** are at the bottom of the right panel. · **Hold** и **Phase** переехали на осциллограф; **Reset phase** и **Clear samples** внизу правой панели.
+- **Online libraries** update when a new version is published. The Artem Music library is fixed: stereo and all takes (version 1.1). · **Онлайн-библиотеки** обновляются, когда выходит новая версия. Библиотека Artem Music исправлена: стерео и все дубли (версия 1.1).
+
 ## 0.2.10
 - **For best sound** (Auto → Level): sets the levels of the samples for a modern kick sound. · **For best sound** (Auto → Level): подбирает уровни сэмплов для современного звука кика.
 - **Reset phase** and **Clear samples** buttons; **Clear all samples** in the browser. · Кнопки **Reset phase** и **Clear samples**; **Clear all samples** в браузере.
