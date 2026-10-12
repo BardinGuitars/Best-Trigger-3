@@ -40,7 +40,7 @@
 <header class="top">
   <h1>BEST TRIGGER 3</h1>
   <div class="sub">User Manual</div>
-  <div class="ver">Version 0.2.7 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
+  <div class="ver">Version 0.2.8 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
 </header>
 <main>
 
@@ -182,6 +182,7 @@
 </ul>
 
 <h1 id="phase">10. Phase</h1>
+<p>Next to each sample name is a role button: <b>LEAD</b> (lined up with the original; the first LEAD sample is the leader), <b>FOL</b> (moves together with the leader: rooms and overheads) and <b>ALIGN</b> (finds its own offset and polarity against the leader, without music: Out, Sub). Samples of one set also play the same take on every hit.</p>
 <p>A sample played with the original can thin out the sound if their waves cancel. Switch the right-panel button to <b>Phase</b> to see the last hit: the original, the samples and their sum.</p>
 <ol class="steps">
   <li>Click a <b>Smp</b> box at the top of the scope and drag the graph left or right to move that sample's Offset (±30 ms; <kbd>Shift</kbd> = finer, double-click the graph = 0).</li>
@@ -220,6 +221,7 @@
   <tr><td><b>Trigger source</b></td><td>Audio or MIDI.</td></tr>
   <tr><td><b>MIDI in / out note</b></td><td>The notes.</td></tr>
   <tr><td><b>Sample library</b></td><td>The library folder and migration (full version).</td></tr>
+  <tr><td><b>Auto trim</b></td><td>Lowers the output knob by what goes over 0 dB; never raises it.</td></tr>
   <tr><td><b>Remember last samples / settings</b></td><td>A new plugin starts with your last samples (on) or settings (off).</td></tr>
   <tr><td><b>Help improve Best Trigger</b></td><td>Usage statistics and error reports; off until you agree.</td></tr>
   <tr><td><b>Quick start guide…, Manual, Website</b></td><td>Help.</td></tr>
@@ -249,7 +251,7 @@
 <p>The plugin uses the JUCE framework, TweetNaCl and a method from the tci2wav project (MIT). Licence texts: <a href="https://github.com/BardinGuitars/Best-Trigger-3/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>. VST is a trademark of Steinberg Media Technologies GmbH.</p>
 <footer>
   <b>© 2026 SSM-Audio. All rights reserved.</b><br>
-  Best Trigger 3 · version 0.2.7
+  Best Trigger 3 · version 0.2.8
 </footer>
 </main>
 </body>
