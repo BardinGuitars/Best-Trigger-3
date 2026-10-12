@@ -40,7 +40,7 @@
 <header class="top">
   <h1>BEST TRIGGER 3</h1>
   <div class="sub">User Manual</div>
-  <div class="ver">Version 0.2.6 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
+  <div class="ver">Version 0.2.7 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
 </header>
 <main>
 
@@ -114,9 +114,9 @@
   <tr><th style="width:170px">Area</th><th>Purpose</th></tr>
   <tr><td><b>Top panel</b></td><td><b>A / B / Copy</b>, <b>Undo / Redo</b> (5 steps), <b>Presets</b>, IN/OUT meters, master output knob, gear menu (a red dot means a new version).</td></tr>
   <tr><td><b>Scope</b></td><td>Two views, switched by the button on the right: <b>Timeline</b> (hits in time; the starting view) and <b>Phase</b> (the last hit). The green <b>TEST</b> strip on the right fires a test hit: higher click = harder hit.</td></tr>
-  <tr><td><b>Sum panel</b></td><td>The round tick shows the sum of the traces that are shown. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>; <b>Low Cut / High Cut</b> filters for the detector.</td></tr>
+  <tr><td><b>Sum panel</b></td><td>The round tick shows the sum of the traces that are shown. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>, <b>Input</b>, <b>Samples</b> (moves all sample faders together) and <b>Pitch</b> (all Tune knobs together). Ctrl + drag of any sample fader or Tune knob does the same; <b>Low Cut / High Cut</b> filters for the detector.</td></tr>
   <tr><td><b>Channels</b></td><td><b>Original</b> and <b>Smp 1–6</b>: trace tick, fader, <b>M</b>, <b>S</b>, <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, <b>Pan</b>, <b>Tune</b>, and a plate with the sample name.</td></tr>
-  <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b>, <b>Fit</b> (Timeline), <b>Timeline / Phase</b>, <b>Hold</b>, <b>Browser</b> (full version).</td></tr>
+  <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b>, <b>Timeline / Phase</b>, <b>Hold</b>, <b>Browser</b> (full version).</td></tr>
 </table>
 <p><kbd>Shift</kbd> makes every knob and fader ten times finer. Double-click resets a value; right-click a knob to type a number.</p>
 <h2>Presets</h2>
@@ -129,11 +129,12 @@
   <tr><td><b>Threshold</b></td><td>The level above which the signal is a hit. Drag the red lines.</td><td>−30 dB</td></tr>
   <tr><td><b>Sensitivity</b></td><td>How quickly the detector is ready again. Higher = safer against doubles, lower = catches fast hits. Drag the yellow lines.</td><td>50%</td></tr>
   <tr><td><b>Retrigger</b></td><td>The dead time after a hit. Drag the edge of the purple zone.</td><td>40 ms</td></tr>
+  <tr><td><b>Input</b></td><td>The level of your loudest hits: they play the hardest layer. Full Auto sets it; or drag the green <b>Loud</b> line.</td><td>0 dB</td></tr>
   <tr><td><b>Low Cut / High Cut</b></td><td>Filters for the detector only; the sound does not change.</td><td>—</td></tr>
 </table>
 <p><b>Dynamics</b>: 1.00 = the hit strength fully controls the layer and loudness; 0 = always the hardest layer at full level.</p>
 <ol class="steps">
-  <li>Start playback; the wheel zooms the time window, <b>Hold</b> freezes the picture, <b>Fit</b> fits the height.</li>
+  <li>Start playback; the wheel zooms the time window, <b>Hold</b> freezes the picture; the height fits itself.</li>
   <li>Drag the red lines so that real hits cross them and unwanted sounds stay below.</li>
   <li>Crosses mark sounds skipped by Retrigger. Real hits crossed out: lower Retrigger or Sensitivity. Several lines on one hit: raise them.</li>
 </ol>
@@ -156,7 +157,7 @@
   <tr><td><b>FLT</b></td><td>Low Cut and High Cut for this sample.</td></tr>
   <tr><td><b>Pan, Tune</b></td><td>Pan L100…R100; pitch ±24 semitones.</td></tr>
   <tr><td><b>Release</b></td><td><b>Auto</b> (default): a new hit fades out the previous sample of the same channel by itself, faster on fast parts. <b>off</b> keeps the tails; or set a time.</td></tr>
-  <tr><td><b>Orig Gate</b></td><td>After a hit the original stays audible for this time, then closes. 0 = off.</td></tr>
+  <tr><td><b>Orig Gate</b></td><td>After a hit the original stays audible for this time, then closes. The further right, the shorter; all the way left = off.</td></tr>
   <tr><td><b>Humanize</b></td><td>Small random changes of level, pitch and timing on every hit.</td></tr>
 </table>
 <div class="warn"><b>No sound?</b>Check: activation, a sample on the plate, Mute/Solo, the fader, and that the Threshold is not too high.</div>
@@ -166,9 +167,8 @@
 <ul>
   <li><b>R</b> + number: the take.</li>
   <li><b>V</b> + number: the velocity (0–127) from which the layer plays, e.g. <code>_V0</code>, <code>_V50</code>, <code>_V105</code>.</li>
-  <li>Small numbers (<code>_V1 … _V4</code>) are spread evenly: a bigger number means a harder hit.</li>
+  <li>Small numbers (<code>_V1 … _V4</code>) are spread evenly; the plugin checks which end is the loudest recording, so it does not matter which number is the hardest hit.</li>
 </ul>
-<div class="warn"><b>Careful</b>If a library numbers its layers the other way round, it plays upside down. Rename the files.</div>
 <p>To save a multisample as one <code>.bt3</code> file: right-click the plate → <b>Save multisample file (.bt3)…</b>.</p>
 
 <h1 id="library">9. Library and browser</h1>
@@ -176,6 +176,7 @@
 <ul>
   <li><b>Library folder:</b> gear → <b>Sample library</b>. By default <code>Documents\SSM-Audio\Best Trigger 3\Library</code>.</li>
   <li><b>Browser</b> (right panel): a tree of your library with search and <b>Audition</b>. A click plays a file; a <b>double-click</b> loads it into the next free channel; you can also drag onto a pad. Right-click a file for more, right-click a pad to clear it.</li>
+  <li><b>Remember place</b> (bottom left): the browser opens where you stopped. WAV and BT3 files have different icon colours.</li>
   <li><b>Online libraries…</b>: free libraries with a cover and the author's text. Choose one and press <b>Download and install</b>.</li>
   <li><b>Migration…</b>: converts a <code>.tci</code> library into <code>.bt3</code> files. Choose the folder; the files are created in your library. Convert only free samples or your own.</li>
 </ul>
@@ -225,7 +226,7 @@
   <tr><td><b>Check for updates</b></td><td>Green when a new version is out.</td></tr>
   <tr><td><b>About, License…</b></td><td>Version and licence.</td></tr>
 </table>
-<p>The plugin reports a latency of about 31.5 ms to the DAW, which compensates for it. Do not monitor live playing through the plugin.</p>
+<p>The plugin reports a latency of about 36 ms to the DAW, which compensates for it. Do not monitor live playing through the plugin.</p>
 
 <h1 id="trouble">14. Troubleshooting</h1>
 <table>
@@ -248,7 +249,7 @@
 <p>The plugin uses the JUCE framework, TweetNaCl and a method from the tci2wav project (MIT). Licence texts: <a href="https://github.com/BardinGuitars/Best-Trigger-3/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>. VST is a trademark of Steinberg Media Technologies GmbH.</p>
 <footer>
   <b>© 2026 SSM-Audio. All rights reserved.</b><br>
-  Best Trigger 3 · version 0.2.6
+  Best Trigger 3 · version 0.2.7
 </footer>
 </main>
 </body>
