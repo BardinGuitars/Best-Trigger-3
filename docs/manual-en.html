@@ -40,368 +40,215 @@
 <header class="top">
   <h1>BEST TRIGGER 3</h1>
   <div class="sub">User Manual</div>
-  <div class="ver">Version 0.2.3 · VST3 · Windows 10/11 (64-bit) · macOS · <a href="manual-ru.html">Русская версия</a></div>
+  <div class="ver">Version 0.2.4 · VST3 · Windows 10/11 · macOS · <a href="manual-ru.html">Русская версия</a></div>
 </header>
 <main>
 
 <nav class="toc">
-  <a href="#about">1. About the plugin</a>
+  <a href="#about">1. About</a>
   <a href="#versions">2. Versions and activation</a>
   <a href="#install">3. Installation</a>
   <a href="#quick">4. Quick start</a>
-  <a href="#ui">5. The interface</a>
-  <a href="#detect">6. How hits are detected</a>
+  <a href="#ui">5. The window</a>
+  <a href="#detect">6. Hit detection</a>
   <a href="#samples">7. Samples and mixer</a>
-  <a href="#multi">8. Multisamples and .bt3 files</a>
-  <a href="#library">9. Library, browser and .tci migration</a>
-  <a href="#phase">10. Phase and alignment</a>
-  <a href="#auto">11. The Auto menu</a>
-  <a href="#scope">12. The scope: mouse controls</a>
-  <a href="#midi">13. MIDI</a>
-  <a href="#settings">14. Settings (the gear)</a>
-  <a href="#latency">15. Plugin latency</a>
-  <a href="#trouble">16. Troubleshooting</a>
-  <a href="#tech">17. Technical data</a>
-  <a href="#legal">18. Legal</a>
+  <a href="#multi">8. Multisamples</a>
+  <a href="#library">9. Library and browser</a>
+  <a href="#phase">10. Phase</a>
+  <a href="#auto">11. Auto</a>
+  <a href="#midi">12. MIDI</a>
+  <a href="#settings">13. Settings</a>
+  <a href="#trouble">14. Troubleshooting</a>
+  <a href="#legal">15. Legal</a>
 </nav>
 
-<p>New here? Read sections 3 and 4: in ten minutes you can replace or reinforce drum hits with samples. Sections 6 and 10 explain how to get the result just right, and section 11 how to leave the routine work to the automation. Names of buttons and menu items are written as they appear in the plugin.</p>
-
-<h1 id="about">1. About the plugin</h1>
-<p><b>Best Trigger 3</b> is a drum trigger. It listens to a recorded drum track (kick, snare, tom), finds every hit and at that very moment plays your samples: <b>instead of</b> the original sound or <b>together with</b> it.</p>
+<h1 id="about">1. About</h1>
+<p><b>Best Trigger 3</b> is a drum trigger. It finds every hit on a recorded kick, snare or tom track and plays your samples <b>instead of</b> the original or <b>together with</b> it.</p>
 <ul>
-  <li><b>Accurate hit detection</b> by threshold, with protection against double triggering; the detector's filters do not change the sound.</li>
-  <li><b>Up to six samples at once</b>, each with its own level, pan, pitch (Tune), envelope (ASR), filters (FLT), Mute/Solo and phase flip.</li>
-  <li><b>Multisamples</b>: velocity layers and several round-robin takes; our own <code>.bt3</code> format.</li>
-  <li><b>An oscilloscope</b>: you see the original, each sample and their sum; the threshold, Retrigger and each sample's Offset are dragged with the mouse.</li>
-  <li><b>Phase tools</b>: the Sum gain meter, automatic alignment from the music, phase tracking on every hit.</li>
-  <li><b>The Auto menu</b> with <b>Full Auto</b>: sets the threshold, aligns the phase and switches phase tracking on.</li>
-  <li><b>A | B</b>, <b>5-step Undo/Redo</b>, input and output meters, master output level.</li>
-  <li><b>A sample browser</b> with search and audition; <b>migration</b> of .tci libraries to .bt3.</li>
-  <li><b>MIDI</b>: record hits as a MIDI clip and trigger samples with a note.</li>
+  <li>Up to six samples at once, each with level, pan, tune, envelope, filters, Mute/Solo and phase flip.</li>
+  <li>Multisamples: velocity layers and round-robin takes, the <code>.bt3</code> format.</li>
+  <li>An oscilloscope with a draggable threshold, Retrigger and sample Offsets.</li>
+  <li>Phase tools and <b>Full Auto</b>.</li>
+  <li>A | B, Undo/Redo, presets, a sample browser, MIDI in and out.</li>
 </ul>
 
 <h1 id="versions">2. Versions and activation</h1>
-<p>There are two versions. They install side by side and have different names in your DAW.</p>
+<p>Two versions install side by side.</p>
 <table>
-  <tr><th></th><th>Best Trigger 3 Free</th><th>Best Trigger 3 (full)</th></tr>
-  <tr><td><b>Samples</b></td><td>six built-in multisamples: Kick IN, Kick OUT, Kick SUB, Snare TOP, Snare BOTTOM, Tom</td><td>your own samples, folders, .bt3 libraries</td></tr>
-  <tr><td><b>Browser, library folder, .tci migration</b></td><td>no</td><td>yes</td></tr>
-  <tr><td><b>Everything else</b> (scope, Auto, mixer, filters, MIDI, A/B, Undo)</td><td colspan="2">the same in both</td></tr>
-  <tr><td><b>Key</b></td><td><code>thankyou</code> (the same for everybody)</td><td>your licence key like <code>XXXXX-XXXXX-XXXXX-XXXXX</code></td></tr>
+  <tr><th></th><th>Best Trigger 3 Free</th><th>Best Trigger 3</th></tr>
+  <tr><td><b>Samples</b></td><td>six built-in</td><td>your own samples, folders, .bt3</td></tr>
+  <tr><td><b>Browser, library, .tci migration</b></td><td>no</td><td>yes</td></tr>
+  <tr><td><b>Everything else</b></td><td colspan="2">the same</td></tr>
+  <tr><td><b>Key</b></td><td><code>thankyou</code></td><td>your key <code>XXXXX-XXXXX-XXXXX-XXXXX</code></td></tr>
 </table>
-
-<h2>How to activate</h2>
 <ol class="steps">
-  <li>On the first start the plugin shows the activation window. Until the plugin is activated the window cannot be closed and the samples are silent.</li>
-  <li>Enter the key (in the free version it is already filled in) and press <b>Activate</b>. An internet connection is needed once.</li>
-  <li>Afterwards the bottom right corner says <b>Licensed</b> (or <b>Free version (activated)</b>).</li>
+  <li>On the first start enter the key (in the free version it is already there) and press <b>Activate</b>. Internet is needed once.</li>
+  <li>The bottom right corner then says <b>Licensed</b>.</li>
 </ol>
-
-<h2>Licence rules (full version)</h2>
 <ul>
-  <li><b>One key, one computer.</b> To move the licence press <b>Deactivate this computer</b> in the licence window (the button in the bottom right corner) and activate the same key on the new computer.</li>
-  <li><b>The plugin works offline</b> on the permission it has stored (valid for a year). At every start, and about every 12 hours while there is a connection, it checks with the server.</li>
-  <li>If a licence is revoked (for example after a refund) or moved to another computer, the plugin loses it at the next check and shows the activation window.</li>
-  <li>A Best Trigger 3 licence covers all 3.x updates.</li>
+  <li><b>One key, one computer.</b> To move the licence press <b>Deactivate this computer</b> in the licence window, then activate on the new one.</li>
+  <li>The plugin works offline and checks the licence from time to time when online.</li>
+  <li>Usage statistics are sent only if you agree (gear → <b>Help improve Best Trigger</b>). Your audio is never sent.</li>
 </ul>
-<div class="tip"><b>What is sent to the server</b>On activation and checks: the key, a hash of the computer (not its serial number), the name and version of the DAW and plugin, the operating system and the country (from the connection). Usage statistics and error reports are sent only if you agree (a question at the first start; you can change it in the gear menu: <b>Help improve Best Trigger</b>). Your audio and file names are never sent.</div>
 
 <h1 id="install">3. Installation</h1>
 <h2>Windows</h2>
 <ol class="steps">
-  <li>Download the installer from <a href="https://github.com/BardinGuitars/Best-Trigger-3/releases/latest">Releases</a>: <code>BestTrigger3-Free-…-Setup.exe</code> or <code>BestTrigger3-…-Setup.exe</code>.</li>
-  <li>Run it. Windows may show a blue "Windows protected your PC" window because the installer is not signed with a paid certificate. Click <b>More info → Run anyway</b>.</li>
-  <li>Close your DAW before installing and rescan plugins afterwards. The plugin is installed in <code>C:\Program Files\Common Files\VST3</code>.</li>
-  <li>Insert the plugin on a drum track as an effect (insert).</li>
+  <li>Download the installer from <a href="https://github.com/BardinGuitars/Best-Trigger-3/releases/latest">Releases</a> and run it. If Windows shows a blue warning, click <b>More info → Run anyway</b>.</li>
+  <li>Close your DAW first and rescan plugins afterwards.</li>
+  <li>Insert the plugin on a drum track as an effect.</li>
 </ol>
 <h2>macOS</h2>
-<p>The Mac version comes <b>without Apple notarisation</b>, so macOS will warn you the first time. This is expected; see <a href="install-macos.html">how to allow the plugin</a>.</p>
-<div class="tip"><b>Tip</b>The plugin works best on a separate track of a single drum (kick, snare, tom) where the hits are clearly audible.</div>
+<p>macOS warns you the first time: see <a href="install-macos.html">how to allow the plugin</a>.</p>
 
 <h1 id="quick">4. Quick start</h1>
 <ol class="steps">
-  <li><b>If you also want to hear the original drum, raise the Original level to 0 dB.</b> By default it is at −∞ and only the samples are heard.</li>
-  <li><b>Put samples in.</b> In the free version they are already on six channels. In the full version drop a file on the plate at the bottom of a channel, right-click the plate, or open the <b>Browser</b>. A left click on a plate plays the sample: the further right you click, the harder the hit.</li>
-  <li><b>Start playback in your DAW and choose Auto → Full Auto.</b> The plugin sets the threshold, aligns the phase and switches phase tracking on. If something is not right, everything can be set by hand: read on.</li>
+  <li>To hear the original too, raise the <b>Original</b> fader to 0 dB.</li>
+  <li>Put samples in. Free: they are already there. Full: drop a file on a plate, right-click the plate, or open the <b>Browser</b>. A click on a plate plays it (further right = harder).</li>
+  <li>Start playback and choose <b>Auto → Full Auto</b>.</li>
 </ol>
-<p>The quick start guide with three pictures is shown on the first start; you can open it again: gear → <b>Quick start guide…</b>.</p>
 
-<h1 id="ui">5. The interface</h1>
+<h1 id="ui">5. The window</h1>
 <figure><img src="images/best-trigger-3.png" alt="The Best Trigger 3 window"><figcaption>The plugin window</figcaption></figure>
 <table>
-  <tr><th style="width:190px">Area</th><th>Purpose</th></tr>
-  <tr><td><b>Top panel</b></td><td>Logo, name and version. <b>A / B / Copy</b>: compare two settings (B becomes a copy of the current one the first time you press it; <b>Copy</b> copies A→B or B→A). <b>Undo / Redo</b>: the last 5 changes (parameters and sample changes). <b>Presets</b> with "&lt;" "&gt;" arrows: your presets (below). Two thin bars, <b>IN</b> (input) and <b>OUT</b> (output). The knob without a caption is the <b>master output level</b> (−24…+12 dB). The gear is the settings menu; a red dot next to it means a new version is out.</td></tr>
-  <tr><td><b>Scope</b></td><td>Two modes, switched by the button on the right panel, which carries the name of the view that is on: <b>Timeline</b> (a stream of hits in time; the starting view) and <b>Phase</b> (the last hit: original, samples, sum). On the right is the <b>TEST strip</b>: the left mouse button fires a test hit, harder the higher you click (sections 7 and 12).</td></tr>
-  <tr><td><b>Left panel "Sum"</b></td><td>The round tick shows the sum on the scope. Knobs <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>. The <b>Low Cut / High Cut</b> button opens the detector's filters.</td></tr>
-  <tr><td><b>Channels</b></td><td><b>Original</b> and samples <b>Smp 1–6</b>. Each has: a round tick to show its trace, a level fader, buttons <b>M</b>, <b>S</b>, and for samples <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, knobs <b>Pan</b> and <b>Tune</b>, and a plate with the sample name. A channel without a sample is dimmed.</td></tr>
-  <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b> (with the green clip handle), <b>Timeline</b>, <b>Hold</b>, <b>Browser</b> (full version only), <b>Fit</b> (Timeline only).</td></tr>
-  <tr><td><b>Status line</b></td><td>Messages from the plugin, <b>Undo/Cancel</b> for Auto, and the licence status on the right.</td></tr>
+  <tr><th style="width:170px">Area</th><th>Purpose</th></tr>
+  <tr><td><b>Top panel</b></td><td><b>A / B / Copy</b>, <b>Undo / Redo</b> (5 steps), <b>Presets</b>, IN/OUT meters, master output knob, gear menu (a red dot means a new version).</td></tr>
+  <tr><td><b>Scope</b></td><td>Two views, switched by the button on the right: <b>Timeline</b> (hits in time; the starting view) and <b>Phase</b> (the last hit). The green <b>TEST</b> strip on the right fires a test hit: higher click = harder hit.</td></tr>
+  <tr><td><b>Sum panel</b></td><td>The round tick shows the sum on the scope. <b>Release</b>, <b>Orig Gate</b>, <b>Dynamics</b>, <b>Humanize</b>; <b>Low Cut / High Cut</b> filters for the detector.</td></tr>
+  <tr><td><b>Channels</b></td><td><b>Original</b> and <b>Smp 1–6</b>: trace tick, fader, <b>M</b>, <b>S</b>, <b>Ø</b>, <b>ENV</b>, <b>FLT</b>, <b>Pan</b>, <b>Tune</b>, and a plate with the sample name.</td></tr>
+  <tr><td><b>Right panel</b></td><td><b>Auto</b>, <b>REC MIDI</b>, <b>Fit</b> (Timeline), <b>Timeline / Phase</b>, <b>Hold</b>, <b>Browser</b> (full version).</td></tr>
 </table>
-<p><b>Fine adjustment:</b> every knob and fader moves ten times finer while you hold <kbd>Shift</kbd>. A double-click restores the default value. A right-click on a knob lets you type a number. Hold the cursor still over a control to see a hint.</p>
-
+<p><kbd>Shift</kbd> makes every knob and fader ten times finer. Double-click resets a value; right-click a knob to type a number.</p>
 <h2>Presets</h2>
-<p>A preset is all your settings (every parameter and the loaded samples) in one file. The <b>Presets</b> button in the top panel (it shows the name of the current preset) opens a menu:</p>
-<ul>
-  <li>the list of your presets: choosing one loads it (the "&lt;" and "&gt;" arrows next to it step through them);</li>
-  <li><b>Save</b>: save the changes into the loaded preset; <b>Save as…</b> / <b>Save as a new preset…</b>: save under a new name (if the name is taken the plugin asks whether to replace it);</li>
-  <li><b>Delete</b>: delete the preset (your current settings do not change);</li>
-  <li><b>Initialize: default settings</b>: return every parameter to the factory value (the samples stay);</li>
-  <li><b>Open the presets folder</b>: shows the preset files (<code>%APPDATA%\DrumTrigger\Presets</code>; you can copy and share them).</li>
-</ul>
-<p>Loading a preset, like any other change, can be taken back with <b>Undo</b>. Samples from your library folder are saved relative to it, so a preset still works after the library is moved. In the free version a preset keeps the parameters; the samples stay the built-in ones.</p>
+<p>A preset stores all settings and loaded samples. The <b>Presets</b> button opens the list; use <b>Save</b>, <b>Save as…</b>, <b>Delete</b> and <b>Initialize</b> (default settings). The arrows step through presets, and Undo takes a loaded preset back. In the free version a preset keeps the settings only.</p>
 
-<h1 id="detect">6. How hits are detected</h1>
-<p>The plugin watches the loudness of the track. When the signal rises above the <b>Threshold</b>, it registers a hit, measures its strength and plays the samples. After that the detector "closes" and is ready for the next hit only after the <b>Retrigger</b> time has passed and the signal has dropped low enough (<b>Sensitivity</b>).</p>
-<p>These parameters are set with the mouse right on the scope in <b>Timeline</b> mode. A double-click on a value box lets you type a number.</p>
+<h1 id="detect">6. Hit detection</h1>
+<p>Set these on the scope in the <b>Timeline</b> view. A double-click on a value box lets you type a number.</p>
 <table>
-  <tr><th style="width:130px">Parameter</th><th>Meaning</th><th style="width:110px">Default</th></tr>
-  <tr><td><b>Threshold</b></td><td>The level above which the signal counts as a hit (−60…0 dB). In Timeline: two red dashed lines.</td><td>−30 dB</td></tr>
-  <tr><td><b>Sensitivity</b></td><td>How quickly the detector re-arms after a hit: at 0% at 80% of the threshold (fast, catches rolls, but may fire twice on one hit), at 100% at 20% (safer against doubles, but fast hits may be missed). In Timeline: yellow <i>re-arm</i> lines.</td><td>50%</td></tr>
-  <tr><td><b>Retrigger</b></td><td>The "dead time" after a hit (5–250 ms). In Timeline: the purple zone; drag its right edge.</td><td>40 ms</td></tr>
-  <tr><td><b>Low Cut / High Cut</b></td><td>Filters for the <b>detector only</b> (they do not change the sound): they help to ignore rumble and hiss. The button at the bottom left. Low Cut 20…2000 Hz, High Cut 500…20000 Hz.</td><td>20 / 12 000 Hz</td></tr>
+  <tr><th style="width:130px">Parameter</th><th>Meaning</th><th style="width:90px">Default</th></tr>
+  <tr><td><b>Threshold</b></td><td>The level above which the signal is a hit. Drag the red lines.</td><td>−30 dB</td></tr>
+  <tr><td><b>Sensitivity</b></td><td>How quickly the detector is ready again. Higher = safer against doubles, lower = catches fast hits. Drag the yellow lines.</td><td>50%</td></tr>
+  <tr><td><b>Retrigger</b></td><td>The dead time after a hit. Drag the edge of the purple zone.</td><td>40 ms</td></tr>
+  <tr><td><b>Low Cut / High Cut</b></td><td>Filters for the detector only; the sound does not change.</td><td>—</td></tr>
 </table>
-<h2>Hit strength and Dynamics</h2>
-<p>The hit strength is measured from the peak in the first 1.5 ms after the threshold is crossed: from the threshold (soft) to 0 dB (loud). The <b>Dynamics</b> knob sets how much the hit affects the sound:</p>
-<ul>
-  <li><b>1.00</b>: the choice of layer and the loudness follow the hit strength fully;</li>
-  <li><b>0</b>: always the hardest layer at full level;</li>
-  <li>values in between give a smooth compromise.</li>
-</ul>
-<h2>Timeline mode</h2>
+<p><b>Dynamics</b>: 1.00 = the hit strength fully controls the layer and loudness; 0 = always the hardest layer at full level.</p>
 <ol class="steps">
-  <li>Make sure the button on the right panel says <b>Timeline</b> (lit; it is the starting view) and start playback.</li>
-  <li>The mouse wheel changes the window from 0.1 to 10 seconds; <b>Hold</b> freezes the picture (the wheel still zooms, the middle button scrolls).</li>
-  <li>Drag the red lines so that real hits cross them and unwanted sounds stay inside.</li>
-  <li>Grey/red "crosses" are sounds the plugin skipped because of Retrigger. If real hits are marked, lower Retrigger or Sensitivity. If one hit has several orange lines, raise them.</li>
+  <li>Start playback; the wheel zooms the time window, <b>Hold</b> freezes the picture, <b>Fit</b> fits the height.</li>
+  <li>Drag the red lines so that real hits cross them and unwanted sounds stay below.</li>
+  <li>Crosses mark sounds skipped by Retrigger. Real hits crossed out: lower Retrigger or Sensitivity. Several lines on one hit: raise them.</li>
 </ol>
-<p><b>Fit</b> fits the height of the picture to the signal; <kbd>Ctrl</kbd>+wheel changes it by hand.</p>
-<div class="tip"><b>A tip about a gate</b>If the track has a lot of bleed from other drums, for the best result of the automatic phase tools and a clean threshold it is recommended to put a <b>gate before Best Trigger</b>: it removes tails and unwanted sounds so the plugin sees clean hits.</div>
+<div class="tip"><b>Tip</b>With a lot of bleed from other drums, put a gate before Best Trigger.</div>
 
 <h1 id="samples">7. Samples and mixer</h1>
-<h2>Putting a sample on a channel (full version)</h2>
+<p>On every hit all loaded samples play at once.</p>
 <ul>
-  <li><b>Drop a file</b> on the plate of the channel; files dropped on the window beside a plate fill the first free slots.</li>
-  <li><b>Right-click the plate:</b> <b>Load sample or .bt3 file…</b>, <b>Load folder (multisample)…</b>, <b>Save multisample file (.bt3)…</b>, <b>Clear sample</b>.</li>
-  <li><b>Browser:</b> choose a file in the library tree (section 9).</li>
-  <li>WAV, AIFF, FLAC (mono or stereo, up to 120 seconds), multisample folders and .bt3 files are supported.</li>
+  <li><b>Full version:</b> drop a file on a plate, or right-click the plate: <b>Load sample or .bt3 file…</b>, <b>Load folder (multisample)…</b>, <b>Save multisample file (.bt3)…</b>, <b>Clear sample</b>. WAV, AIFF, FLAC.</li>
+  <li><b>Free version:</b> the plates hold built-in samples; right-click offers <b>Restore the original sample</b>.</li>
+  <li>A click on a plate plays only that sample with all its settings; further right = harder.</li>
 </ul>
-<p>On every hit <b>all</b> loaded samples play at once, each with its own settings, so you can layer a "click" and a "sub" of a kick.</p>
-<p>In the free version the plates hold the built-in samples; a right-click offers <b>Restore the original sample</b> or <b>Clear sample</b>.</p>
-
-<h2>The plate: auditioning</h2>
-<p>A left click on a plate with a sample plays <b>only that sample</b> the way it will sound on a hit: with all its settings (level, Pan, Tune, ENV, FLT, Offset, Ø, Mute/Solo, Humanize). <b>The hit strength depends on where you click on the plate: further left is softer, further right is harder.</b> A multisample plays the matching layer; single samples (one layer) always sound the same. The ▶ on the plate hints that it can be clicked. The name is shown without the extension; the full name pops up when you hold the cursor still.</p>
-<h2>The TEST strip on the scope</h2>
-<p>On the right of the scope (in both modes) there is a narrow green strip. No control works there except the <b>left mouse button: it fires a test hit of all samples at once through the whole signal path</b>. The strength depends on the height of the click: <b>higher is harder, lower is softer</b> (on multisamples this chooses the layer).</p>
-
-<h2>A mixer channel</h2>
 <table>
-  <tr><th style="width:130px">Element</th><th>Description</th></tr>
-  <tr><td><b>Round tick</b></td><td>Shows or hides the channel's trace on the scope. The Original tick includes the original in the on-screen sum even if its fader is at −∞.</td></tr>
-  <tr><td><b>Fader</b></td><td>Channel level from −∞ to <b>+24 dB</b> (the value under the fader has hundredths). By default Original is at −∞ and the samples at 0 dB. You can drag from any point of the fader.</td></tr>
-  <tr><td><b>M / S</b></td><td>Mute and Solo. Solo keeps only the soloed channels audible (Mute is then ignored).</td></tr>
-  <tr><td><b>Ø</b></td><td>Flips the phase of the sample. Original has none: it is the phase reference.</td></tr>
-  <tr><td><b>ENV</b></td><td>ASR envelope: <b>Attack</b> 0–200 ms; <b>Sustain</b> 0–2000 ms (off = play the whole sample); <b>Release</b> 1–1000 ms. The button lights up while an envelope is in use.</td></tr>
-  <tr><td><b>FLT</b></td><td>Filters of <b>this sample's sound</b>: <b>Low Cut</b> (20…2000 Hz) and <b>High Cut</b> (1000…20000 Hz), "off" at the ends. Lights up when a filter is on. (The scope does not show the filters yet.)</td></tr>
-  <tr><td><b>Pan</b></td><td>Pan from L100 to R100, constant power (the level does not change in the centre).</td></tr>
-  <tr><td><b>Tune</b></td><td>Pitch in semitones, −24…+24 (the length changes too, as with a speed change).</td></tr>
-  <tr><td><b>Plate</b></td><td>The sample name; click to audition, right-click for the menu.</td></tr>
+  <tr><th style="width:110px">Element</th><th>Description</th></tr>
+  <tr><td><b>Tick</b></td><td>Shows or hides the trace on the scope.</td></tr>
+  <tr><td><b>Fader</b></td><td>Level, −∞ to +24 dB. Original starts at −∞, samples at 0 dB.</td></tr>
+  <tr><td><b>M / S</b></td><td>Mute and Solo.</td></tr>
+  <tr><td><b>Ø</b></td><td>Flips the phase of the sample.</td></tr>
+  <tr><td><b>ENV</b></td><td>Attack, Sustain and Release of the sample.</td></tr>
+  <tr><td><b>FLT</b></td><td>Low Cut and High Cut for this sample.</td></tr>
+  <tr><td><b>Pan, Tune</b></td><td>Pan L100…R100; pitch ±24 semitones.</td></tr>
+  <tr><td><b>Release</b></td><td>A new hit fades out the previous sample of the same channel in this time.</td></tr>
+  <tr><td><b>Orig Gate</b></td><td>After a hit the original stays audible for this time, then closes. 0 = off.</td></tr>
+  <tr><td><b>Humanize</b></td><td>Small random changes of level, pitch and timing on every hit.</td></tr>
 </table>
-<h2>Shared knobs (left panel)</h2>
-<table>
-  <tr><th style="width:130px">Knob</th><th>Description</th></tr>
-  <tr><td><b>Release</b></td><td>When a new hit arrives, the previous sounding sample <b>of the same channel</b> fades out in this time (0–500 ms). 0 = no cut-off.</td></tr>
-  <tr><td><b>Orig Gate</b></td><td>Gate for the original: after each hit the original stays audible for the set time (0–500 ms, step 0.1 ms; finer with <kbd>Shift</kbd>), then closes smoothly. 0 = off. It does not touch the samples.</td></tr>
-  <tr><td><b>Dynamics</b></td><td>See section 6.</td></tr>
-  <tr><td><b>Humanize</b></td><td>Against a "machine-gun" sound: small random variations on every hit of level (up to ±1.5 dB), pitch (up to ±25 cents) and timing (up to ±1 ms). 0–100% scales the range.</td></tr>
-</table>
-<div class="warn"><b>If you do not hear the samples</b>Check: is the plugin activated; is a sample loaded (its name on the plate); Mute/Solo on the channels; is the fader at −∞; is the Threshold too high (the IN meter does not reach it).</div>
+<div class="warn"><b>No sound?</b>Check: activation, a sample on the plate, Mute/Solo, the fader, and that the Threshold is not too high.</div>
 
-<h1 id="multi">8. Multisamples and .bt3 files</h1>
-<p>A multisample is an instrument made of several files: <b>layers</b> by hit strength and several <b>takes</b> (round robin) in each. A take is chosen at random (repeats are possible); the layer by the hit strength.</p>
-<h2>Naming the files in a folder</h2>
-<p>Load the folder: <b>right-click the plate → Load folder (multisample)…</b>. Files are named like <code>Name_R1_V0.wav</code> (the order <code>Name_V0_R1.wav</code> is accepted too):</p>
+<h1 id="multi">8. Multisamples</h1>
+<p>A multisample has velocity <b>layers</b> and several round-robin <b>takes</b>. Load a folder: right-click a plate → <b>Load folder (multisample)…</b>. Name the files like <code>Name_R1_V0.wav</code> (<code>Name_V0_R1.wav</code> works too):</p>
 <ul>
-  <li><b>R</b> + number: the take (round robin) number. It is for your convenience; takes play at random.</li>
-  <li><b>V</b> + number: the MIDI velocity (0–127) from which this layer plays. Example: <code>_V0</code>, <code>_V50</code>, <code>_V105</code>, <code>_V127</code> means: V0 plays from 0 to 49, V50 from 50 to 104, V105 from 105 to 126, and V127 only at exactly 127.</li>
-  <li>You can give <b>levels</b> instead of exact velocities, like in Trigger 2: <code>_V1, _V2, _V3, _V4</code> (all numbers below 32). The plugin spreads them evenly over 0…127 <b>in ascending order: a bigger number means a harder hit</b>.</li>
-  <li>If no file matches such a name, all the files of the folder become takes of one layer.</li>
+  <li><b>R</b> + number: the take.</li>
+  <li><b>V</b> + number: the velocity (0–127) from which the layer plays, e.g. <code>_V0</code>, <code>_V50</code>, <code>_V105</code>.</li>
+  <li>Small numbers (<code>_V1 … _V4</code>) are spread evenly: a bigger number means a harder hit.</li>
 </ul>
-<div class="warn"><b>Careful</b>Some libraries number them the other way round: V1 is the hardest layer. Then the multisample plays "upside down". Rename the files (or swap the numbers) so that a bigger number means a harder hit.</div>
-<h2>The .bt3 file</h2>
-<p>A multisample (even a single sample) can be saved into one <code>.bt3</code> file: right-click the plate → <b>Save multisample file (.bt3)…</b>. The samples inside are compressed losslessly (FLAC), so the file is smaller, and it cannot be opened by just renaming it. The whole file is loaded into memory; nothing is read from disk while you play.</p>
-<h2>How layers relate to audio and MIDI</h2>
-<p>For audio the hit strength comes from the signal peak, for MIDI from the note velocity; in both cases the <b>Dynamics</b> knob sets how much it affects the choice of layer (section 6).</p>
+<div class="warn"><b>Careful</b>If a library numbers its layers the other way round, it plays upside down. Rename the files.</div>
+<p>To save a multisample as one <code>.bt3</code> file: right-click the plate → <b>Save multisample file (.bt3)…</b>.</p>
 
-<h1 id="library">9. Library, browser and .tci migration</h1>
+<h1 id="library">9. Library and browser</h1>
 <p>Full version only.</p>
-<h2>The library folder</h2>
-<p>Gear → <b>Sample library</b> → <b>Choose sample library folder…</b> sets the folder where you keep your samples. By default it is <code>Documents\SSM-Audio\Best Trigger 3\Library</code>. The file dialogs open in this folder. Also there: <b>Open library folder</b> and <b>Use the default folder</b>.</p>
-<h2>The sample browser</h2>
-<p>The <b>Browser</b> button in the right panel opens a separate window: a tree of the library's folders and files, a search box (all typed words must appear in the name and path), the <b>Audition</b> button (play on click), and the buttons <b>Refresh</b>, <b>Migration…</b>, <b>Library folder…</b>, <b>Open in Explorer</b>. At the bottom are six <b>pads</b>, one per sample channel.</p>
 <ul>
-  <li><b>One click</b> on a file plays it (if Audition is on).</li>
-  <li><b>A double-click</b> loads the file into the next free channel (when all six are taken, into the selected one); dragging onto a pad loads it into that pad. Click a pad to select it.</li>
-  <li><b>Right-click a file or folder</b>: choose a pad and load (a folder loads as a multisample); <b>right-click a pad</b> to clear the channel.</li>
+  <li><b>Library folder:</b> gear → <b>Sample library</b>. By default <code>Documents\SSM-Audio\Best Trigger 3\Library</code>.</li>
+  <li><b>Browser</b> (right panel): a tree of your library with search and <b>Audition</b>. A click plays a file; a <b>double-click</b> loads it into the next free channel; you can also drag onto a pad. Right-click a file for more, right-click a pad to clear it.</li>
+  <li><b>Online libraries…</b>: free libraries with a cover and the author's text. Choose one and press <b>Download and install</b>.</li>
+  <li><b>Migration…</b>: converts a <code>.tci</code> library into <code>.bt3</code> files. Choose the folder; the files are created in your library. Convert only free samples or your own.</li>
 </ul>
-<h2>Online libraries</h2>
-<p>The <b>Online libraries…</b> button in the browser opens a list of sample libraries that can be downloaded: for each one you see the size, a description and <b>what is inside</b>. Choose a library and press <b>Download and install</b>: the plugin downloads the archive, checks its checksum and unpacks it into your library folder (the folder structure is kept, your own files are never overwritten). Under the list you also see the author's own text (Info.txt) in full, with its links and copyrights, and the cover picture. The library then shows in the browser tree. Only sounds, .bt3 files and notes are taken from the archive.</p>
-<h2>Migrating a .tci library</h2>
-<p>Gear → <b>Sample library</b> → <b>Migration</b> (or the <b>Migration…</b> button in the browser) turns a library of Trigger Instrument Editor instruments (<code>.tci</code>) into <code>.bt3</code> files:</p>
-<ol class="steps">
-  <li>The plugin shows a warning: only free samples and samples you made yourself may be converted; you are responsible for having the right to convert them. <b>Continue</b> becomes available when you tick the confirmation.</li>
-  <li>Choose the folder with the <code>.tci</code> library.</li>
-  <li>The plugin creates <code>.bt3</code> files straight in your library folder, <b>repeating the names and the folder structure of the original</b>. Ordinary audio files (WAV, AIFF, FLAC) lying in the same library are copied as they are.</li>
-  <li>Running it again continues the work: finished files are skipped. A detailed report is saved in <code>MIGRATION_LOG.txt</code>.</li>
-</ol>
-<div class="tip"><b>Protected libraries</b>Official paid libraries (the "INSTRUMENT 2" format) are recognised by their header and are <b>never converted</b>: such files are skipped. Your original files are not changed or deleted.</div>
 
-<h1 id="phase">10. Phase and alignment</h1>
-<p>When a sample plays together with the original, their waves add up. If the peaks coincide the sum is fuller; if one goes "up" while the other goes "down" they cancel each other and the sound gets thin (especially in the lows). Aligning the phase means shifting the sample in time and, if needed, flipping its polarity.</p>
-<h2>Hit mode</h2>
-<p>With the button on <b>Phase</b>, the scope shows the <b>last hit</b> (from 40 ms before the hit to 85 ms after). The blue trace is the original, the coloured ones are samples, the white one is the <b>sum</b> (the <b>Sum</b> tick): what really goes to the output, with levels, Mute/Solo, Offset, Ø and envelopes. The traces are drawn with thickened lines, and the height fits the largest trace by itself.</p>
-<h3>Offset: shifting a sample against the original</h3>
-<p>Each sample has its own <b>Offset</b> from −30 to +30 ms (the original is the reference). The <b>Smp 1…6</b> boxes at the top of the scope show the values.</p>
+<h1 id="phase">10. Phase</h1>
+<p>A sample played with the original can thin out the sound if their waves cancel. Switch the right-panel button to <b>Phase</b> to see the last hit: the original, the samples and their sum.</p>
 <ol class="steps">
-  <li>Click the box of the sample (it lights up).</li>
-  <li>Drag the graph left and right: the Offset of the selected sample moves; with <kbd>Shift</kbd> ten times finer.</li>
-  <li>A double-click on the box lets you type a number; a double-click on the graph resets the Offset to 0.</li>
-</ol>
-<h3>Sum gain</h3>
-<p>In the top right corner of the scope is the <b>Sum gain</b> number: how much louder the sum is than the channels added without regard to phase (dB).</p>
-<table>
-  <tr><th style="width:180px">Colour and value</th><th>Meaning</th></tr>
-  <tr><td><b>Green</b>, from +1.5 dB</td><td>The waves are in phase; the sum is fuller. The goal.</td></tr>
-  <tr><td><b>Yellow</b>, about 0 dB</td><td>The phase relation is neutral.</td></tr>
-  <tr><td><b>Red</b>, below −1.5 dB</td><td>The channels cancel each other: move the sample or press Ø.</td></tr>
-</table>
-<p>The number is calculated over the first 40 ms of the hit (in Bass mode over the first 100 ms, lows only). If the original is at −∞ but its tick is on, it is still counted in the on-screen sum.</p>
-<h2>Aligning by hand</h2>
-<ol class="steps">
-  <li>Leave the Original and one sample on the screen.</li>
+  <li>Click a <b>Smp</b> box at the top of the scope and drag the graph left or right to move that sample's Offset (±30 ms; <kbd>Shift</kbd> = finer, double-click the graph = 0).</li>
   <li>If the first waves go in opposite directions, press <b>Ø</b>.</li>
-  <li>Switch on <b>Sum</b> and move the Offset until Sum gain is highest and green.</li>
-  <li>Check on several hits (soft and hard); for live recordings switch on tracking (section 11).</li>
+  <li>Watch <b>Sum gain</b>: green (+1.5 dB or more) is good, red (below −1.5 dB) means the channels cancel.</li>
 </ol>
-<h2>Phase tracking</h2>
-<p><b>Auto → Track phase on every hit</b>: before a sample starts, the plugin looks at the first 10–12 ms of this very hit and adjusts the start within <b>±2 ms</b>. The plugin latency does not grow because of it.</p>
-<div class="warn"><b>Limits</b>Tracking makes no sense if the original is "dirty" (a lot of bleed from other drums): then put a gate in front of the plugin (section 6) or use the one-off <b>Align phase</b>. With a strongly negative Offset (below about −16 ms) tracking is switched off on such hits.</div>
+<p><b>Auto → Track phase on every hit</b> fine-tunes the start of each sample by up to ±2 ms. It works best on a clean track.</p>
 
-<h1 id="auto">11. The Auto menu</h1>
-<p>While an automatic tool is listening to the music, the Auto button blinks and shows the number of hits heard (for example <b>5/24</b>); progress also shows in the status line. A result can be undone: <b>Undo</b> in the status line, the item <b>Undo the last auto change</b>, or <b>Undo</b> in the top panel.</p>
+<h1 id="auto">11. Auto</h1>
+<p>While a tool listens to the music, the Auto button blinks. Every result can be undone with <b>Undo</b>.</p>
 <table>
   <tr><th style="width:230px">Item</th><th>What it does</th></tr>
-  <tr><td><b>Full Auto: threshold, phase</b></td><td>Everything in order: 1) listens to transients for 12 seconds and sets <b>Threshold and Retrigger</b>; 2) collects ~24 hits and finds the <b>Offset and Ø</b> of each sample; 3) switches <b>phase tracking</b> on. The sample levels are not changed. The whole Full Auto is undone with one press of Undo.</td></tr>
-  <tr><td><b>Whole signal / Bass</b></td><td>Which part of the signal the phase and level analyses and the Sum gain meter use. For a kick choose <b>Bass</b> (default), for a snare and cymbals <b>Whole signal</b>.</td></tr>
-  <tr><td><b>Align phase: listen to the music</b></td><td>Listens to playback until about 24 hits are collected (40 seconds at most) and finds the Offset (±30 ms) and Ø of each loaded sample. The result and the confidence in per cent are written in the status line; with low confidence (&lt; 30%) the plugin warns you.</td></tr>
-  <tr><td><b>Track phase on every hit</b></td><td>The phase tracking switch (section 10).</td></tr>
-  <tr><td><b>Match samples to the original</b></td><td>Sets each sample's level from the loudness of the original (first 100 ms: for Whole signal with K-weighting, as in LUFS; for Bass the lows below 250 Hz).</td></tr>
-  <tr><td><b>Make samples equally loud</b></td><td>Evens the samples out against each other: the loudest stays at 0 dB. No music is needed.</td></tr>
-  <tr><td><b>Learn Threshold and Retrigger</b></td><td>Listens to all transients for 12 seconds, separates real hits from quiet bleed and sets Threshold and Retrigger. If hits and bleed cannot be told apart, the plugin says so: then check the threshold by hand in Timeline.</td></tr>
-  <tr><td><b>Start playback automatically when learning</b></td><td>Tries to start the DAW's playback by itself. <b>It does not work in all DAWs</b>: VST3 usually does not allow a plugin to press Play.</td></tr>
+  <tr><td><b>Full Auto</b></td><td>Sets Threshold and Retrigger, aligns the phase of each sample and switches phase tracking on.</td></tr>
+  <tr><td><b>Whole signal / Bass</b></td><td>The part of the signal used for the analysis. Bass for a kick, whole signal for a snare.</td></tr>
+  <tr><td><b>Align phase</b></td><td>Finds the Offset and Ø of each sample.</td></tr>
+  <tr><td><b>Track phase on every hit</b></td><td>Switches phase tracking on or off.</td></tr>
+  <tr><td><b>Match samples to the original</b></td><td>Sets sample levels from the loudness of the original.</td></tr>
+  <tr><td><b>Make samples equally loud</b></td><td>Evens out the samples; no music needed.</td></tr>
+  <tr><td><b>Learn Threshold and Retrigger</b></td><td>Sets only these two.</td></tr>
+  <tr><td><b>Start playback automatically</b></td><td>Works only in some DAWs.</td></tr>
 </table>
-<div class="tip"><b>Sound is needed</b>While playback is stopped the plugin says "Waiting for audio…" and starts counting when sound arrives. If there is no sound for 90 seconds the learning is cancelled.</div>
+<p>The tools need sound: start playback.</p>
 
-<h1 id="scope">12. The scope: mouse controls</h1>
+<h1 id="midi">12. MIDI</h1>
+<ul>
+  <li><b>Output:</b> every hit is also sent as a MIDI note (gear → <b>MIDI out note</b>).</li>
+  <li><b>Recording:</b> press <b>REC MIDI</b>, play, press it again, then drag the green <b>drag MIDI clip to DAW</b> handle onto a MIDI track.</li>
+  <li><b>Input:</b> gear → <b>Trigger source → MIDI</b> and a <b>MIDI in note</b>; the velocity sets the hit strength.</li>
+</ul>
+
+<h1 id="settings">13. Settings (the gear)</h1>
 <table>
-  <tr><th style="width:250px">Action</th><th style="width:100px">Mode</th><th>Result</th></tr>
-  <tr><td>Drag a red line</td><td>Timeline</td><td>Changes <b>Threshold</b>.</td></tr>
-  <tr><td>Drag a yellow line</td><td>Timeline</td><td>Changes <b>Sensitivity</b>.</td></tr>
-  <tr><td>Drag the edge of the purple zone</td><td>Timeline</td><td>Changes <b>Retrigger</b>.</td></tr>
-  <tr><td>Mouse wheel</td><td>Timeline</td><td>Window 0.1…10 s (works in Hold too).</td></tr>
-  <tr><td><kbd>Ctrl</kbd> + wheel</td><td>Timeline</td><td>Height of the picture.</td></tr>
-  <tr><td>Middle button and drag</td><td>Both</td><td>Scrolling (in Timeline together with Hold, history up to 10 s).</td></tr>
-  <tr><td>Click a <b>Smp N</b> box</td><td>Hit</td><td>Selects the sample for Offset.</td></tr>
-  <tr><td>Drag the graph left/right</td><td>Hit</td><td>Changes the <b>Offset</b> of the selected sample; finer with <kbd>Shift</kbd>.</td></tr>
-  <tr><td>Double-click the graph</td><td>Hit</td><td>Resets the Offset of the selected sample to 0.</td></tr>
-  <tr><td>Mouse wheel</td><td>Hit</td><td>Time zoom (10…125 ms).</td></tr>
-  <tr><td>Double-click a value box</td><td>Both</td><td>Type a number.</td></tr>
-  <tr><td>Left click on the TEST strip on the right</td><td>Both</td><td>A test hit; the strength depends on the height of the click.</td></tr>
+  <tr><th style="width:230px">Item</th><th>What it does</th></tr>
+  <tr><td><b>Interface scale</b></td><td>Window size, 70–200%.</td></tr>
+  <tr><td><b>Scope smoothing…</b></td><td>Smooths the picture only.</td></tr>
+  <tr><td><b>Trigger source</b></td><td>Audio or MIDI.</td></tr>
+  <tr><td><b>MIDI in / out note</b></td><td>The notes.</td></tr>
+  <tr><td><b>Sample library</b></td><td>The library folder and migration (full version).</td></tr>
+  <tr><td><b>Remember last samples / settings</b></td><td>A new plugin starts with your last samples (on) or settings (off).</td></tr>
+  <tr><td><b>Help improve Best Trigger</b></td><td>Usage statistics and error reports; off until you agree.</td></tr>
+  <tr><td><b>Quick start guide…, Manual, Website</b></td><td>Help.</td></tr>
+  <tr><td><b>Check for updates</b></td><td>Green when a new version is out.</td></tr>
+  <tr><td><b>About, License…</b></td><td>Version and licence.</td></tr>
 </table>
-<p><b>Hold</b> freezes the picture. <b>Smooth</b> (gear → <b>Scope smoothing…</b>, default 50%) smooths the traces in Hit mode; it does not affect the sound.</p>
+<p>The plugin reports a latency of about 31.5 ms to the DAW, which compensates for it. Do not monitor live playing through the plugin.</p>
 
-<h1 id="midi">13. MIDI</h1>
-<h2>MIDI output</h2>
-<p>Every detected hit is also sent as a MIDI note (36 by default) with a velocity that matches the hit strength. Choose the note: gear → <b>MIDI out note</b> (with General MIDI names). This makes the plugin an "audio to MIDI converter".</p>
-<h2>Recording hits to a clip</h2>
-<ol class="steps">
-  <li>Press <b>REC MIDI</b> and start playback.</li>
-  <li>Press <b>REC MIDI</b> again to stop.</li>
-  <li>A green handle <b>drag MIDI clip to DAW</b> appears next to it: drag it onto a MIDI track.</li>
-</ol>
-<p>If the DAW tells the plugin its position and tempo, the notes land on the bar grid; otherwise the clip is recorded at 120 BPM from the first hit.</p>
-<h2>MIDI input</h2>
-<p>To trigger samples with a MIDI note choose gear → <b>Trigger source → MIDI</b> and a note in <b>MIDI in note</b> (36 by default). The audio detector is off in this mode; the note velocity sets the hit strength.</p>
-
-<h1 id="settings">14. Settings (the gear)</h1>
+<h1 id="trouble">14. Troubleshooting</h1>
 <table>
-  <tr><th style="width:250px">Item</th><th>What it does</th></tr>
-  <tr><td><b>Interface scale</b></td><td>Window scale 70…200%.</td></tr>
-  <tr><td><b>Scope smoothing…</b></td><td>Smoothing of the scope picture (the sound does not change).</td></tr>
-  <tr><td><b>Trigger source</b></td><td>Audio (by sound) or MIDI (by note).</td></tr>
-  <tr><td><b>MIDI in note / MIDI out note</b></td><td>The input and output notes.</td></tr>
-  <tr><td><b>Sample library</b></td><td>The library folder, open it, return to the default folder, <b>Migration</b> (section 9). Full version only.</td></tr>
-  <tr><td><b>Remember last samples</b></td><td>A new plugin starts with the samples you used last time. On by default.</td></tr>
-  <tr><td><b>Remember last settings</b></td><td>The same for the other parameters. Off by default. A project with a saved state always wins over the remembered one.</td></tr>
-  <tr><td><b>Help improve Best Trigger</b></td><td>Allow usage statistics and error reports (section 2). You can turn it off at any time.</td></tr>
-  <tr><td><b>Quick start guide…</b></td><td>Show the quick start window.</td></tr>
-  <tr><td><b>Manual / Website / Write to the developer</b></td><td>Open the manual, the web site, write to the developer.</td></tr>
-  <tr><td><b>Check for updates</b></td><td>Check for updates by hand. The plugin also checks by itself at every start; if a newer version exists a red dot shows next to the gear and the item is marked.</td></tr>
-  <tr><td><b>About Best Trigger 3</b></td><td>Version, copyright, third-party components.</td></tr>
-  <tr><td><b>License… / Get the full version</b></td><td>The licence window; in the free version a link to the full one.</td></tr>
-</table>
-<p><b>Where data is stored.</b> User settings are in <code>%APPDATA%\DrumTrigger</code> (free version: <code>%APPDATA%\DrumTriggerFree</code>): <code>settings.xml</code>, <code>lastState.xml</code>, <code>license.dat</code>. The parameters and samples of a project are stored inside the DAW project.</p>
-
-<h1 id="latency">15. Plugin latency</h1>
-<p>So that a sample can be placed <b>earlier</b> than the original (a negative Offset down to −30 ms) and so that the plugin has time to look at the hit, the original is delayed inside the plugin. The total latency is about <b>31.5 ms</b> (30 ms of headroom plus 1.5 ms to measure the strength). The plugin reports it to the DAW, which compensates for it automatically.</p>
-<div class="warn"><b>Playing in real time</b>If you play and monitor through the plugin, the delay will be noticeable. For live playing monitor around the plugin or record without it.</div>
-
-<h1 id="trouble">16. Troubleshooting</h1>
-<table>
-  <tr><th style="width:260px">Problem</th><th>What to check</th></tr>
-  <tr><td>The activation window will not close</td><td>The plugin has to be activated (section 2). An internet connection is needed. Free version: the key is <code>thankyou</code>.</td></tr>
-  <tr><td>"No connection to the licence server"</td><td>Check the internet and try again; it is needed once for activation.</td></tr>
-  <tr><td>"This key is already used on another computer"</td><td>The key is bound to another computer: deactivate it there (<b>Deactivate this computer</b>) and activate here. If the old computer is gone, write to the seller.</td></tr>
-  <tr><td>"Locked: …" / "Missing: …" on a plate</td><td>Locked: your sample in a project while the plugin is not activated (it loads after activation). Missing: the file was not found on this computer: load it again.</td></tr>
-  <tr><td>No sound from the samples</td><td>Activation; is a sample loaded; Mute/Solo; the fader at −∞; the Threshold too high.</td></tr>
-  <tr><td>Only the sample is heard, not the original</td><td>That is the default: the Original fader is at −∞. Raise it.</td></tr>
-  <tr><td>A hit triggers twice</td><td>Raise Retrigger and/or Sensitivity (in Timeline doubles show as extra lines).</td></tr>
+  <tr><th style="width:260px">Problem</th><th>What to do</th></tr>
+  <tr><td>The activation window will not close</td><td>Enter the key and press Activate (internet needed). Free: <code>thankyou</code>.</td></tr>
+  <tr><td>"This key is already used on another computer"</td><td>Press <b>Deactivate this computer</b> there, then activate here.</td></tr>
+  <tr><td>"Locked" / "Missing" on a plate</td><td>Locked: activate the plugin. Missing: load the file again.</td></tr>
+  <tr><td>No sound from the samples</td><td>See section 7.</td></tr>
+  <tr><td>Only the sample is heard</td><td>Raise the Original fader.</td></tr>
+  <tr><td>A hit triggers twice</td><td>Raise Retrigger and/or Sensitivity.</td></tr>
   <tr><td>Fast hits are missed</td><td>Lower Retrigger and/or Sensitivity.</td></tr>
-  <tr><td>It triggers on the bleed of other drums</td><td>Raise Threshold; narrow the detector's Low/High Cut; run <b>Learn Threshold</b>; put a gate in front of the plugin.</td></tr>
-  <tr><td>Sum gain is red, the sound is thin</td><td>The phase does not match: Ø, Offset or <b>Align phase</b> (section 10).</td></tr>
-  <tr><td>Learn Threshold / Align phase find nothing</td><td>Playback with clear hits is needed; automatic start works only in some DAWs.</td></tr>
-  <tr><td>A multisample plays "upside down"</td><td>In its files V1 is the hardest layer: rename them so a bigger number means a harder hit (section 8).</td></tr>
-  <tr><td>The plugin is not visible in the DAW</td><td>Rescan plugins; check that it was installed into <code>C:\Program Files\Common Files\VST3</code>.</td></tr>
+  <tr><td>It triggers on other drums</td><td>Raise Threshold, narrow the detector filters, or put a gate before the plugin.</td></tr>
+  <tr><td>Thin sound, Sum gain red</td><td>Press Ø or move the Offset (section 10).</td></tr>
+  <tr><td>A multisample plays upside down</td><td>Rename the files (section 8).</td></tr>
+  <tr><td>The plugin is not in the DAW</td><td>Rescan plugins.</td></tr>
 </table>
 
-<h1 id="tech">17. Technical data</h1>
-<table>
-  <tr><th style="width:240px">Item</th><th>Value</th></tr>
-  <tr><td>Format / OS</td><td>VST3, 64-bit; Windows 10/11</td></tr>
-  <tr><td>Input / output</td><td>Stereo output; mono or stereo input</td></tr>
-  <tr><td>MIDI</td><td>Input (trigger by note) and output (a note for every hit)</td></tr>
-  <tr><td>Samples</td><td>6 channels; WAV, AIFF, FLAC, .bt3; mono/stereo; up to 120 s</td></tr>
-  <tr><td>Channel level / output</td><td>−∞…+24 dB / −24…+12 dB</td></tr>
-  <tr><td>Sample Offset / Tune / Pan</td><td>−30…+30 ms / −24…+24 semitones / L100…R100</td></tr>
-  <tr><td>ASR envelope</td><td>Attack 0–200 ms; Sustain 0–2000 ms (off); Release 1–1000 ms</td></tr>
-  <tr><td>Sample filters (FLT)</td><td>Low Cut 20–2000 Hz; High Cut 1000–20000 Hz</td></tr>
-  <tr><td>Detector</td><td>Threshold −60…0 dB; Retrigger 5–250 ms; Sensitivity 0–100%; Low Cut 20–2000 Hz; High Cut 500–20000 Hz</td></tr>
-  <tr><td>Orig Gate</td><td>0 (off) – 500 ms</td></tr>
-  <tr><td>Phase tracking</td><td>±2 ms on every hit</td></tr>
-  <tr><td>Latency</td><td>about 31.5 ms (reported to the DAW)</td></tr>
-  <tr><td>Undo</td><td>5 steps</td></tr>
-</table>
-
-<h1 id="legal">18. Legal</h1>
-<p><b>© 2026 SSM-Audio. All rights reserved.</b> Best Trigger 3, its logo and the name SSM-Audio belong to their owner. The program is licensed for use; copying, redistribution, decompiling and bypassing the licence check without the owner's permission are forbidden.</p>
-<h2>Third-party software</h2>
-<p>The plugin uses the JUCE framework (© Raw Material Software Limited), the TweetNaCl cryptographic library (public domain) and a method for reading .tci files from the tci2wav project (Aidan Scroggins, MIT licence). Licence texts: <a href="https://github.com/BardinGuitars/Best-Trigger-3/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>.</p>
-<h2>Trademarks</h2>
-<p>Windows is a trademark of Microsoft Corporation. All other names and marks belong to their owners and are mentioned only to indicate compatibility.</p>
+<h1 id="legal">15. Legal</h1>
+<p><b>© 2026 SSM-Audio. All rights reserved.</b> The program is licensed for use; copying, redistribution and decompiling without the owner's permission are forbidden.</p>
+<p>The plugin uses the JUCE framework, TweetNaCl and a method from the tci2wav project (MIT). Licence texts: <a href="https://github.com/BardinGuitars/Best-Trigger-3/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>. VST is a trademark of Steinberg Media Technologies GmbH.</p>
 <footer>
   <b>© 2026 SSM-Audio. All rights reserved.</b><br>
-  <b>VST is a trademark and software of Steinberg Media Technologies GmbH.</b><br>
-  Best Trigger 3 · version 0.2.3
+  Best Trigger 3 · version 0.2.4
 </footer>
 </main>
 </body>

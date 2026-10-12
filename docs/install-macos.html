@@ -19,46 +19,36 @@
 </head>
 <body>
 <main>
-<h1>macOS: allowing the plugin · macOS: как разрешить плагин</h1>
+<h1>macOS: allowing the plugin · как разрешить плагин</h1>
 <p><a href="manual-en.html">Manual (English)</a> · <a href="manual-ru.html">Руководство (русский)</a></p>
 
-<div class="tip"><b>Why you see a warning · Почему появляется предупреждение.</b><br>
-Apple asks developers to pay a yearly fee for a certificate ("notarisation"). I cannot pay it from my country, so Best Trigger 3 is <b>not notarised</b>. macOS therefore says that it "cannot verify the developer". The plugin is safe, and you decide to trust it once.<br><br>
-Apple требует от разработчиков ежегодный платный сертификат («нотаризацию»). Из моей страны оплатить его невозможно, поэтому Best Trigger 3 <b>не нотаризован</b>, и macOS пишет, что «не может проверить разработчика». Плагин безопасен, вы один раз разрешаете его сами.</div>
-
 <h2>English</h2>
-<h3>1. The installer will not open</h3>
-<p>macOS says: <i>"…cannot be opened because the developer cannot be verified"</i>.</p>
+<h3>The installer will not open</h3>
 <ul>
-  <li><b>Right-click</b> (or Control-click) the installer file → <b>Open</b> → <b>Open</b>. This only has to be done once.</li>
-  <li>Or open <b>System Settings → Privacy &amp; Security</b>, scroll down to the message about the blocked file and click <b>Open Anyway</b>.</li>
+  <li>Right-click the installer → <b>Open</b> → <b>Open</b> (once).</li>
+  <li>Or: <b>System Settings → Privacy &amp; Security</b> → <b>Open Anyway</b>.</li>
 </ul>
-<h3>2. The plugin is installed but your DAW does not show it, or says it cannot be loaded</h3>
+<h3>The DAW does not show the plugin</h3>
 <ul>
-  <li>Open <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b> next to the message about "Best Trigger 3", then rescan plugins in your DAW.</li>
-  <li>If there is no such message, remove the quarantine mark. Open <b>Terminal</b> (Applications → Utilities) and paste:</li>
+  <li>In <b>Privacy &amp; Security</b> click <b>Open Anyway</b> next to the message about "Best Trigger 3", then rescan plugins.</li>
+  <li>No message? Paste in Terminal (Applications → Utilities):</li>
 </ul>
 <pre><code>xattr -dr com.apple.quarantine "/Library/Audio/Plug-Ins/VST3/Best Trigger 3.vst3"</code></pre>
-<p>(For the free version: <code>Best Trigger 3 Free.vst3</code>. If you installed the plugin only for yourself, the folder is <code>~/Library/Audio/Plug-Ins/VST3/</code>.) Then restart your DAW and rescan.</p>
-<h3>3. Still not loading?</h3>
-<p>Write to me (the address is on the download page) and tell me your macOS version, your DAW and whether the Mac has an Apple chip (M1/M2/M3…) or Intel.</p>
+<p>Free version: <code>Best Trigger 3 Free.vst3</code>. Restart the DAW and rescan.</p>
 
 <h2>Русский</h2>
-<h3>1. Установщик не открывается</h3>
-<p>macOS пишет: <i>«…невозможно открыть, так как не удаётся проверить разработчика»</i>.</p>
+<h3>Установщик не открывается</h3>
 <ul>
-  <li>Нажмите на файл установщика <b>правой кнопкой</b> (или Control + клик) → <b>Открыть</b> → <b>Открыть</b>. Это нужно сделать один раз.</li>
-  <li>Или: <b>Системные настройки → Конфиденциальность и безопасность</b>, прокрутите вниз до сообщения о заблокированном файле и нажмите <b>«Всё равно открыть»</b>.</li>
+  <li>Правый щелчок по установщику → <b>Открыть</b> → <b>Открыть</b> (один раз).</li>
+  <li>Или: <b>Системные настройки → Конфиденциальность и безопасность</b> → <b>Всё равно открыть</b>.</li>
 </ul>
-<h3>2. Плагин установлен, но DAW его не показывает или не может загрузить</h3>
+<h3>DAW не показывает плагин</h3>
 <ul>
-  <li>Откройте <b>Системные настройки → Конфиденциальность и безопасность</b>, найдите сообщение про «Best Trigger 3» и нажмите <b>«Всё равно открыть»</b>, затем пересканируйте плагины в DAW.</li>
-  <li>Если такого сообщения нет, уберите отметку карантина. Откройте <b>Терминал</b> (Программы → Утилиты) и вставьте:</li>
+  <li>В <b>Конфиденциальность и безопасность</b> нажмите <b>Всё равно открыть</b> у сообщения про «Best Trigger 3» и пересканируйте плагины.</li>
+  <li>Сообщения нет? Вставьте в Терминал (Программы → Утилиты):</li>
 </ul>
 <pre><code>xattr -dr com.apple.quarantine "/Library/Audio/Plug-Ins/VST3/Best Trigger 3.vst3"</code></pre>
-<p>(Для бесплатной версии: <code>Best Trigger 3 Free.vst3</code>. Если вы ставили плагин только для себя, папка: <code>~/Library/Audio/Plug-Ins/VST3/</code>.) Затем перезапустите DAW и пересканируйте плагины.</p>
-<h3>3. Всё равно не загружается?</h3>
-<p>Напишите мне (адрес на странице загрузки): версия macOS, ваш DAW и какой у Mac процессор: Apple (M1/M2/M3…) или Intel.</p>
+<p>Бесплатная версия: <code>Best Trigger 3 Free.vst3</code>. Перезапустите DAW и пересканируйте.</p>
 </main>
 </body>
 </html>
