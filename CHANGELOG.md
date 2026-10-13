@@ -1,5 +1,12 @@
 # Changelog · История изменений
 
+## 0.2.12
+- **Spectrum** — a third view of the scope (frequency response of the output): speeds from *Very slow* to *Total*, Energy / RMS, Slope typed in by hand, 41 / 61 / Hi-res bands, vertical stretch with the arrows, drag with the middle mouse button; the settings are remembered. Each view has its own button. · **Spectrum** — третий вид осциллографа (АЧХ выхода): скорости от *Very slow* до *Total*, Energy / RMS, Slope вводится числом, 41 / 61 / Hi-res полос, растяжение по вертикали стрелками, перетаскивание средней кнопкой мыши; настройки запоминаются. У каждого вида своя кнопка.
+- **Activity lights:** level meter beside the fader, name plate fill, layer and take; the Original has a meter too. Each can be switched off in the settings menu. · **Индикация:** индикатор уровня у фейдера, заливка плашки, слой и дубль; у Original тоже есть индикатор. Каждый пункт отключается в меню настроек.
+- **Auto threshold** is more accurate; Auto also sets Sensitivity. · **Auto threshold** стал точнее; Auto ещё и выставляет Sensitivity.
+- **Remember last samples / settings** are off by default; the remembered samples no longer appear in other instances. · **Remember last samples / settings** по умолчанию выключены; запомненные сэмплы больше не попадают в другие экземпляры.
+- Header: the logo opens the web site, the name opens *About*, the version opens the changelog. · Шапка: логотип открывает сайт, название — *About*, версия — список изменений.
+
 ## 0.2.11
 - **Separate outputs** (full version): Original and Smp 1 … Smp 6 on their own stereo outputs; the **OUT** button on a channel sends it there. In REAPER: right-click the plugin → *Build multichannel routing*. · **Отдельные выходы** (полная версия): Original и Smp 1 … Smp 6 на своих стерео-выходах; кнопка **OUT** на канале отправляет его туда. В REAPER: правый щелчок по плагину → *Build multichannel routing*.
 - **For best sound** balances only the close microphones. · **For best sound** выравнивает только близкие микрофоны.
