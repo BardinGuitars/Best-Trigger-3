@@ -1,5 +1,11 @@
 # Changelog · История изменений
 
+## 0.2.13
+- **Samples:** the project remembers which file each sample was; if a file is not the one the project was saved with, the plugin says so. · **Сэмплы:** проект запоминает, какой файл был у каждого сэмпла; если файл не тот, с которым проект сохранён, плагин сообщает об этом.
+- **Spectrum:** new **Reset** button; the settings you choose are remembered. · **Spectrum:** новая кнопка **Reset**; выбранные настройки запоминаются.
+- **Auto trim** is off by default. · **Auto trim** по умолчанию выключен.
+- A **video** button in the quick start window opens our YouTube channel. · Кнопка **видео** в окне быстрого старта открывает наш канал на YouTube.
+
 ## 0.2.12
 - **Spectrum** — a third view of the scope (frequency response of the output): speeds from *Very slow* to *Total*, Energy / RMS, Slope typed in by hand, 41 / 61 / Hi-res bands, vertical stretch with the arrows, drag with the middle mouse button; the settings are remembered. Each view has its own button. · **Spectrum** — третий вид осциллографа (АЧХ выхода): скорости от *Very slow* до *Total*, Energy / RMS, Slope вводится числом, 41 / 61 / Hi-res полос, растяжение по вертикали стрелками, перетаскивание средней кнопкой мыши; настройки запоминаются. У каждого вида своя кнопка.
 - **Activity lights:** level meter beside the fader, name plate fill, layer and take; the Original has a meter too. Each can be switched off in the settings menu. · **Индикация:** индикатор уровня у фейдера, заливка плашки, слой и дубль; у Original тоже есть индикатор. Каждый пункт отключается в меню настроек.
