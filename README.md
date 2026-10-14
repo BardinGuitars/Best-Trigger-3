@@ -8,7 +8,7 @@
 
 **Drum trigger plugin (VST3) with an oscilloscope.**
 
-**Manual:** [English](https://bardinguitars.github.io/Best-Trigger-3/manual-en.html) · **Changelog:** [CHANGELOG.md](CHANGELOG.md#english)
+**Manual:** [English](https://ssm-audio.github.io/Best-Trigger-3/manual-en.html) · **Changelog:** [CHANGELOG.md](CHANGELOG.md#english)
 
 > Proprietary software. © 2026 SSM-Audio. All rights reserved. This page only carries the installers (see [Releases](../../releases)).
 
@@ -28,7 +28,7 @@ Windows 10/11 64-bit or macOS 10.15+; a DAW with VST3.
 
 **Плагин-триггер для барабанов (VST3) с осциллографом.**
 
-**Руководство:** [Русский](https://bardinguitars.github.io/Best-Trigger-3/manual-ru.html) · **История изменений:** [CHANGELOG.md](CHANGELOG.md#русский)
+**Руководство:** [Русский](https://ssm-audio.github.io/Best-Trigger-3/manual-ru.html) · **История изменений:** [CHANGELOG.md](CHANGELOG.md#русский)
 
 > Программа с закрытым исходным кодом. © 2026 SSM-Audio. Все права защищены. На этой странице только установщики (см. [Releases](../../releases)).
 
