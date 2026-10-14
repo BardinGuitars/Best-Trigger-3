@@ -4,6 +4,12 @@
 
 ## English
 
+### 0.2.14
+- A **pop-up window** for typing a value (right-click a knob): the numbers are no longer hidden inside the interface.
+- **Mac and trackpad:** where **Ctrl** was needed, use **Cmd** on a Mac; the Spectrum picture is dragged with the mouse or two fingers; **Cmd** + scroll stretches the curve.
+- The **Audition** button of the browser is now above **Remember place**.
+- The manual describes separate outputs in other DAWs and the controls on a Mac.
+
 ### 0.2.13
 - **Samples:** the project remembers which file each sample was; if a file is not the one the project was saved with, the plugin says so.
 - **Spectrum:** new **Reset** button; the settings you choose are remembered.
@@ -81,6 +87,12 @@
 - First release.
 
 ## Русский
+
+### 0.2.14
+- **Всплывающее окно** для ввода числа (правый щелчок по ручке): цифры больше не прячутся внутри интерфейса.
+- **Mac и трекпад:** где нужен **Ctrl**, на Mac используйте **Cmd**; картинку Spectrum можно тянуть мышью или двумя пальцами; **Cmd** + прокрутка растягивает кривую.
+- Кнопка **Audition** в браузере теперь над **Remember place**.
+- В руководстве описаны отдельные выходы в других DAW и управление на Mac.
 
 ### 0.2.13
 - **Сэмплы:** проект запоминает, какой файл был у каждого сэмпла; если файл не тот, с которым проект сохранён, плагин сообщает об этом.
