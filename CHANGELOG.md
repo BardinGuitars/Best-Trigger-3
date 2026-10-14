@@ -4,6 +4,12 @@
 
 ## English
 
+### 0.3.0
+- **14-day trial.** Press **Start 14-day trial** in the plugin window: all functions are open for 14 days, no key needed. It is one trial per computer.
+- **The free version is gone.** Best Trigger 3 is one product now: the trial, then a licence key (see [how to buy](https://ssm-audio.github.io/Best-Trigger-3/buy.html)).
+- When the trial has ended the window asks for a licence key; your projects are not changed.
+- The manual is reorganised: installation first, then trial and licence, a step-by-step quick start, and a separate description of the scope views.
+
 ### 0.2.14
 - A **pop-up window** for typing a value (right-click a knob): the numbers are no longer hidden inside the interface.
 - **Mac and trackpad:** where **Ctrl** was needed, use **Cmd** on a Mac; the Spectrum picture is dragged with the mouse or two fingers; **Cmd** + scroll stretches the curve.
@@ -87,6 +93,12 @@
 - First release.
 
 ## Русский
+
+### 0.3.0
+- **Пробный период 14 дней.** Нажмите в окне плагина **Start 14-day trial**: 14 дней открыты все функции, ключ не нужен. Пробный период один на компьютер.
+- **Бесплатной версии больше нет.** Best Trigger 3 теперь один продукт: пробный период, затем лицензионный ключ (см. [как купить](https://ssm-audio.github.io/Best-Trigger-3/buy.html)).
+- Когда пробный период закончился, окно просит лицензионный ключ; ваши проекты не меняются.
+- Руководство переработано: сначала установка, затем пробный период и лицензия, быстрый старт по шагам и отдельное описание видов осциллографа.
 
 ### 0.2.14
 - **Всплывающее окно** для ввода числа (правый щелчок по ручке): цифры больше не прячутся внутри интерфейса.
