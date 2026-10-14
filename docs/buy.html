@@ -3,35 +3,100 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Best Trigger 3 — buy</title>
+<title>Best Trigger 3</title>
 <style>
-  :root { color-scheme: light dark; --ink:#1d2026; --muted:#5d6572; --accent:#6b46d9; --accent-hover:#5a38c2; --bg:#fff; --line:#d9dce2; }
-  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaee; --muted:#9aa0ac; --accent:#8d6cf5; --accent-hover:#a187f8; --bg:#15171a; --line:#343840; } }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 "Segoe UI", system-ui, Arial, sans-serif; text-align:center; }
-  main { max-width:560px; margin:0 auto; padding:48px 20px 60px; }
-  h1 { font-size:30px; margin:0 0 4px; }
-  .lang { color:var(--muted); font-size:14px; margin:0 0 36px; }
-  .lang a { color:var(--muted); }
-  section { padding:28px 0 36px; border-top:1px solid var(--line); }
-  .price { color:var(--muted); font-size:18px; margin:6px 0 26px; }
-  a.shop { display:block; background:var(--accent); color:#fff; text-decoration:none; font-size:26px; font-weight:600; padding:24px 16px; border-radius:16px; transition:background .15s, transform .15s; }
-  a.shop:hover, a.shop:focus { background:var(--accent-hover); transform:translateY(-2px); }
+  :root { color-scheme: light dark; --bg:#f8f7f4; --ink:#1b2233; --muted:#5d6572; --pill:#b9cdea; --pill-hover:#a3bde3; --pill-ink:#1b2233; --link:#2c6a8e; --line:#e0ddd5; --logo-filter:invert(.85); }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14161a; --ink:#e9ebf0; --muted:#a0a6b2; --pill:#3a4a6b; --pill-hover:#4a5d85; --pill-ink:#f2f4f8; --link:#8cc2e6; --line:#2c3038; --logo-filter:none; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.55 "Segoe UI", system-ui, Arial, sans-serif; }
+  .page { max-width:1180px; margin:0 auto; padding:24px 28px 56px; }
+  .page + .page { border-top:1px solid var(--line); }
+  header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:34px; }
+  .brand { display:flex; align-items:center; gap:12px; font-size:26px; font-weight:600; letter-spacing:.5px; text-decoration:none; color:var(--ink); }
+  .brand img { height:44px; filter:var(--logo-filter); }
+  .top a { display:inline-block; background:var(--pill); color:var(--pill-ink); text-decoration:none; font-weight:600; padding:12px 26px; border-radius:99px; margin-left:10px; }
+  .top a:hover { background:var(--pill-hover); }
+  .cols { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.25fr); gap:44px; align-items:center; }
+  h1 { font-size:46px; line-height:1.1; margin:0 0 10px; }
+  .tag { font-size:24px; margin:0 0 20px; }
+  ul { margin:0 0 20px; padding-left:22px; } li { margin:6px 0; }
+  .news { display:inline-block; color:var(--link); margin-bottom:26px; }
+  .dl { display:flex; flex-wrap:wrap; gap:14px; margin:6px 0 20px; }
+  .dl a { display:inline-flex; align-items:center; gap:12px; background:var(--pill); color:var(--pill-ink); text-decoration:none; font-weight:600; font-size:20px; padding:10px 28px 10px 10px; border-radius:99px; }
+  .dl a:hover { background:var(--pill-hover); }
+  .dl .ic { width:44px; height:44px; border-radius:50%; background:var(--bg); display:flex; align-items:center; justify-content:center; }
+  .dl svg { width:22px; height:22px; fill:none; stroke:var(--pill-ink); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+  .note { color:var(--muted); margin:0; }
+  .shot img { width:100%; height:auto; border-radius:10px; display:block; box-shadow:0 6px 24px rgba(0,0,0,.18); }
+  @media (max-width:860px) { .cols { grid-template-columns:1fr; } h1 { font-size:38px; } .top a { padding:10px 18px; } }
 </style>
 </head>
 <body>
-<main>
-<h1>Best Trigger 3</h1>
-<p class="lang"><a href="#english">English</a> · <a href="#russian">Русский</a></p>
 
-<section id="english">
-  <div class="price">52 USD</div>
-  <a class="shop" href="https://t.me/ssm_metalmix">Go to shop</a>
-</section>
+<div class="page" id="english">
+  <header>
+    <a class="brand" href="#english"><img src="images/ssm-logo.png" alt="">SSM-Audio</a>
+    <div class="top"><a class="shop" href="https://t.me/ssm_metalmix">buy</a> <a href="#russian">Русский</a></div>
+  </header>
+  <div class="cols">
+    <div>
+      <h1>Best Trigger 3</h1>
+      <p class="tag">set up drum triggers, save time</p>
+      <ul>
+        <li>Finds every hit on a recorded drum track and plays your samples on it</li>
+        <li>Full Auto sets the threshold, the phase and the balance for you</li>
+        <li>Up to six samples per hit, phase aligned automatically</li>
+        <li>See what you hear: Timeline, Phase and Spectrum views</li>
+        <li>VST3 plugin for Windows and macOS</li>
+      </ul>
+      <a class="news" href="https://github.com/SSM-AUDIO/Best-Trigger-3/blob/main/CHANGELOG.md#english">what's new in Best Trigger 3</a>
+      <div class="dl" id="get-en">
+        <a class="win" href="https://github.com/SSM-AUDIO/Best-Trigger-3/releases/latest"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg></span>download for Windows</a>
+        <a class="mac" href="https://github.com/SSM-AUDIO/Best-Trigger-3/releases/latest"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg></span>download for macOS</a>
+      </div>
+      <p class="note">Includes a fully featured 14-day trial. 52 USD.</p>
+    </div>
+    <div class="shot"><img src="images/best-trigger-3.png" alt="The Best Trigger 3 window"></div>
+  </div>
+</div>
 
-<section id="russian">
-  <div class="price">4500 ₽</div>
-  <a class="shop" href="https://t.me/ssm_metalmix">Перейти в магазин</a>
-</section>
-</main>
+<div class="page" id="russian">
+  <header>
+    <a class="brand" href="#russian"><img src="images/ssm-logo.png" alt="">SSM-Audio</a>
+    <div class="top"><a class="shop" href="https://t.me/ssm_metalmix">купить</a> <a href="#english">English</a></div>
+  </header>
+  <div class="cols">
+    <div>
+      <h1>Best Trigger 3</h1>
+      <p class="tag">настройте триггеры барабанов, сэкономьте время</p>
+      <ul>
+        <li>Находит каждый удар на записанной дорожке барабана и играет на нём ваши сэмплы</li>
+        <li>Full Auto сам подбирает порог, фазу и баланс</li>
+        <li>До шести сэмплов на удар, фаза выравнивается автоматически</li>
+        <li>Видно, что вы слышите: виды Timeline, Phase и Spectrum</li>
+        <li>Плагин VST3 для Windows и macOS</li>
+      </ul>
+      <a class="news" href="https://github.com/SSM-AUDIO/Best-Trigger-3/blob/main/CHANGELOG.md#русский">что нового в Best Trigger 3</a>
+      <div class="dl" id="get-ru">
+        <a class="win" href="https://github.com/SSM-AUDIO/Best-Trigger-3/releases/latest"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg></span>скачать для Windows</a>
+        <a class="mac" href="https://github.com/SSM-AUDIO/Best-Trigger-3/releases/latest"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg></span>скачать для macOS</a>
+      </div>
+      <p class="note">Включает полноценный пробный период 14 дней. 4500 ₽.</p>
+    </div>
+    <div class="shot"><img src="images/best-trigger-3.png" alt="Окно Best Trigger 3"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  fetch('https://api.github.com/repos/SSM-AUDIO/Best-Trigger-3/releases/latest').then(function (r) { return r.json(); }).then(function (rel) {
+    (rel.assets || []).forEach(function (a) {
+      var cls = /\.exe$/i.test(a.name) ? 'win' : (/\.pkg$/i.test(a.name) ? 'mac' : '');
+      if (!cls) return;
+      document.querySelectorAll('.dl a.' + cls).forEach(function (el) { el.href = a.browser_download_url; });
+    });
+  }).catch(function () {});
+})();
+</script>
 </body>
 </html>
