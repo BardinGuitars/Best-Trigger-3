@@ -11,7 +11,7 @@
 - **Full Auto** sets the threshold, the phase of the samples and their balance for you.
 - Up to six samples per hit, with automatic phase alignment.
 - Scope with **Timeline**, **Phase** and **Spectrum** views.
-- Separate outputs, sample browser, online libraries, import of Trigger 2 banks (`.tci`).
+- Separate outputs, sample browser, online libraries, converter (Non-commercial .tci)
 
 **Manual:** [English](https://ssm-audio.github.io/Best-Trigger-3/manual-en.html) · **Changelog:** [CHANGELOG.md](CHANGELOG.md#english) · [Video](https://www.youtube.com/@SSM-AUDIO) · [Telegram](https://t.me/ssm_metalmix)
 
@@ -32,7 +32,7 @@ Windows 10/11 64-bit or macOS 10.15+; a DAW with VST3.
 - **Full Auto** сам подбирает порог, фазу сэмплов и их баланс.
 - До шести сэмплов на один удар с автоматическим выравниванием фазы.
 - Осциллограф с видами **Timeline**, **Phase** и **Spectrum**.
-- Отдельные выходы, браузер сэмплов, онлайн-библиотеки, импорт банков Trigger 2 (`.tci`).
+- Отдельные выходы, браузер сэмплов, онлайн-библиотеки, конвертер не коммерческих .tci
 
 **Руководство:** [Русский](https://ssm-audio.github.io/Best-Trigger-3/manual-ru.html) · **История изменений:** [CHANGELOG.md](CHANGELOG.md#русский) · [Видео](https://www.youtube.com/@SSM-AUDIO) · [Telegram](https://t.me/ssm_metalmix)
 
