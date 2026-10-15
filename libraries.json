@@ -1,22 +1,21 @@
 {
   "libraries": [
     {
-      "name": "Artem Music - Leonid Nikonov Drums Samples Pack",
-      "description": "A Ludwig kit recorded at the DTH studios, Moscow (2021): kick, snare and three toms, each in several microphone versions (36 multisample instruments). Free; shared by Artem Music with the author's permission.",
+      "name": "TEST SAMPLES PACK",
+      "description": "TEST SAMPLES PACK",
       "version": "1.1",
-      "size": 94507730,
+      "size": 742000,
       "sha256": "985ef9cdb820f45aa4536669f7cee003df478e9a8cf5fef72aa7db3d45329689",
-      "url": "https://github.com/SSM-AUDIO/Best-Trigger-3/releases/download/libraries/Artem-Music-Leonid-Nikonov-Drums-Samples-Pack.zip",
+      "url": "https://github.com/SSM-AUDIO/Best-Trigger-3/releases/download/libraries/Test-Pack.zip",
       "contents": [
-        "Kick - Ludwig Keystone 24x14 (9 mic versions)",
-        "Snare - Ludwig Supraphonic LM 402 14x6,5 (9 mic versions)",
-        "Tom 1 - Ludwig Keystone 13x9 (6)",
-        "Tom 2 - Ludwig Keystone 16x16 (6)",
-        "Tom 3 - Ludwig Keystone 18x16 (6)",
-        "Mics: Kick In / Out / Sub, Snare Top 1 / Top 2 / Bottom, Butt, Overhead, Kit, Room 1 / Room 2, Processed"
+        "Kick",
+        "Snare",
+        "Tom 1",
+        "Tom 2",
+        "Tom 3"
       ],
-      "infoUrl": "https://github.com/SSM-AUDIO/Best-Trigger-3/releases/download/libraries/Artem-Music-Leonid-Nikonov-Drums-Samples-Pack-Info.txt",
-      "coverUrl": "https://github.com/SSM-AUDIO/Best-Trigger-3/releases/download/libraries/Artem-Music-Leonid-Nikonov-Drums-Samples-Pack-Cover.png"
+      "infoUrl": "https://github.com/SSM-AUDIO/Best-Trigger-3/releases/download/libraries/Test-Pack-Pack-Info.txt",
+      "coverUrl": "https://github.com/SSM-AUDIO/Best-Trigger-3/releases/download/libraries/Test-Pack-Cover.png"
     }
   ]
 }
